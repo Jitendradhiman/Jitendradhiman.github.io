@@ -1,10 +1,10 @@
 basic steps for managing github. Every command starts with $ and the action is described below the command. I assume the working directory on the local host is mygithub. You should also notice that you will have two copies of github files one on your local machine and another on github server to work with. 
 --- making clone to the local machine ---- 
-cd to mygithub and run the following command to get the github material in mygithub
+cd to mygithub and run the following command to get the github material in mygithub directory.
 $ git clone address 
 where address is the clone address obtained by clicking on download clone option on github main page.
 This makes a copy of github files in mygithub.
-Now you can make changes, add some files in mygithub, but you need to add it to the github server. Run the following commands to do that
+Now you can make changes, add some new files (if u wish) in mygithub and then next step is to push it to the github server. Run the following commands to do that
 $ github add .
 github commit -m "a meaning message which says what changes you made"
 github push origin master 
