@@ -157,7 +157,7 @@ function showHide(shID) {
             <h3>Updates</h3>
 
              <ul class="disc">
-		   <li> <i>I will be... </i>
+		   <li> [16-09-2016] <i>I will be graduating soon!</i>
 		   <br>Click the image below to see an illustration of thesis overview.
 		   <br><a href="images/neeraj_thesis_overview.png" target="_blank">
 		   <img width="200" height="300" class="pull-center" alt="sample-image" src="images/neeraj_thesis_overview.png"></a>
