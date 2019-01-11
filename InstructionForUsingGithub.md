@@ -5,11 +5,9 @@ $ git clone address
 where address is the clone address obtained by clicking on download clone option on github main page.
 This makes a copy of github files in mygithub.
 Now you can make changes, add some new files (if u wish) in mygithub and then next step is to push it to the github server. Run the following commands to do that
-$ git add .
+$ git add -A (switch -A incorporates the deletion and addition of local files )
 $ git commit -m "a meaning message which says what changes you made"
-$ git push origin master 
-$ git commit -m "a meaning message which says what changes you made"
-$ git push origin master 
+$ git push origin master (git push is also enough)
 At this point, you will be prompted with github user name and password. Supply that.
 Your files will be successfully uploaded on your github account
 ----- opening a .html file as web page using github server -----
@@ -20,3 +18,5 @@ https://Jitendradhiman.github.io
 By default, this opens index.html file as a web page.
 By default, this opens index.html file as a web page.
 https://Jitendradhiman.github.io 
+You can check the status by using the following command:
+$ git status
