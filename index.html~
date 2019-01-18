@@ -1,582 +1,88 @@
-<!DOCTYPE html>
-<!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
-<!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 8)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
+
+
 <head>
 
-   <!--- Basic Page Needs
-   ================================================== -->
-   <meta charset="utf-8">
-	<title>Neeraj | IISc</title>
-	<meta name="description" content="">
-	<meta name="author" content="">
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-132786322-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-   <!-- Mobile Specific Metas
-   ================================================== -->
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-	<!-- CSS
-    ================================================== -->
-   <link rel="stylesheet" href="css/default.css">
-	<link rel="stylesheet" href="css/layout.css">
-   <link rel="stylesheet" href="css/media-queries.css">
-   <link rel="stylesheet" href="css/magnific-popup.css">
-
-   <!-- Script
-   ================================================== -->
-	<script src="js/modernizr.js"></script>
-
-   <!-- Favicons
-	================================================== -->
-<!--	<link rel="shortcut icon" href="favicon.ico" >-->
-
-<!--google analytics script-->
-<script type="text/javascript">
-
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-28027102-1']);
-  _gaq.push(['_setDomainName', 'ece.iisc.ernet.in']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
+  gtag('config', 'UA-132786322-1');
 </script>
-
-<!-- to add click to know more-->
-<script language="javascript" type="text/javascript">
-function showHide(shID) {
-   if (document.getElementById(shID)) {
-      if (document.getElementById(shID+'-show').style.display != 'none') {
-         document.getElementById(shID+'-show').style.display = 'none';
-         document.getElementById(shID).style.display = 'block';
-      }
-      else {
-         document.getElementById(shID+'-show').style.display = 'inline';
-         document.getElementById(shID).style.display = 'none';
-      }
-   }
-}
-</script>
-
-<style type="text/css">
-   /* This CSS is used for the Show/Hide functionality. */
-   .more {
-      display: none;
-      border-top: 1px solid #666;
-      border-bottom: 1px solid #666; }
-   a.showLink, a.hideLink {
-      text-decoration: none;
-      color: #36f;
-      padding-left: 8px;
-      background: transparent url(down.gif) no-repeat left; }
-   a.hideLink {
-      background: transparent url(up.gif) no-repeat left; }
-   a.showLink:hover, a.hideLink:hover {
-      border-bottom: 1px dotted #36f; }
-</style>
-
+<title>Jitendra Kumar Dhiman</title>
+<link href="./styles/styleFile.css" rel="stylesheet" type="text/css">
+<!--<link rel="icon" href="https://www.math.dartmouth.edu/news-resources/computing/resources_general/samplewebpage/images-static/latinsq.png" type="image/png">-->
 </head>
+
 
 <body>
 
-   <!-- Header
-   ================================================== -->
-   <header id="home">
-
-      <nav id="nav-wrap">
-
-         <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
-	      <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
-
-         <ul id="nav" class="nav">
-            <li class="current"><a class="smoothscroll" href="#home">Home</a></li>
-            <li class="current"><a class="smoothscroll" href="#styles">About Me</a></li>
-            <li class="current"><a class="smoothscroll" href="#portfolio">Findings</a></li>
-<!--            <li class="current"><a class="smoothscroll" href="#timeline">Timeline</a></li>-->
-            <li class="current"><a class="smoothscroll" href="#extras">Extras</a></li>
-<!--            <li class="current"><a class="smoothscroll" href="#moreextras">More-Extras</a></li>-->
-<!--	         <li><a class="smoothscroll" href="#styles">Style Guide</a></li>-->
-         </ul> <!-- end #nav -->
-
-      </nav> <!-- end #nav-wrap -->
-
-      <div class="row banner">
-         <div class="banner-text">
-            <h2 class="responsive-headline">"all is a signal. some heard, and some yet to be."</h2>
-            <h3>Namaste! thank you for pinging this webpage.<br> It shares some "signals" discovered/invented/studied by a PhD Scholar.
-            <br> To know more <a class="smoothscroll" href="#styles">scroll</a> the sidebar.</h3>
-            <hr />
-            <ul class="social">
-<!--               <li><a href="#"><i class="fa fa-facebook"></i></a></li>-->
-               <li><a href="https://twitter.com/neeksww"><i class="fa fa-twitter"></i></a></li>
-               <li><a href="https://plus.google.com/communities/106414622057320932578"><i class="fa fa-google-plus"></i></a></li>
-<!--               <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-               <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-               <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-               <li><a href="#"><i class="fa fa-skype"></i></a></li>-->
-            </ul>
-         </div>
-      </div>
-
-      <p class="scrolldown">
-         <a class="smoothscroll" href="#styles"><i class="icon-down-circle"></i></a>
-      </p>
-
-   </header> <!-- Header End -->
-
-   <!-- Style Guide Section
-   ================================================== -->
-   <section id="styles" style="padding: 10px 0 12px; background: #fff;">
-
-      <div class="row add-bottom">
-
-         <div class="twelve columns">
-
-            <h1>About Me</h1>
-
-            <p align ="justify" class="lead add-bottom"><a href="#"><img width="220" height="120" class="pull-left" alt="sample-image" src="./images/neeks_01.jpg"></a>            
-            Hi! I am Jitendra Kumar Dhiman, a Research Scholar, pursuing my PhD in <a href="http://www.ee.iisc.ac.in">EE</a>
-            at Indian Institute of Science (IISc), Bangalore.
-            I joined <a href="http://www.iisc.ernet.in">Indian Institute of Science (IISc)</a> in 2014 after recieving a M.Tech degree in Electronics and Communication Engineering
-            from <a href="">Indian Institute of Technology</a>, Hyderabad.
-            My interests are in signal sampling, and reconstruction, transform-domain analysis,
-            and pattern recognition.
-			</p>
-            <hr>
-         </div>
-
-      </div> <!-- Row End-->
-      <div class="row add-bottom">
-
-         <div class="twelve columns">
-
-            <h3>Updates</h3>
-
-             <ul class="disc">
-		   <li> <i>I will be... </i>
-		   <br>Click the image below to see an illustration of thesis overview.
-		   <br><a href="images/neeraj_thesis_overview.png" target="_blank">
-		   <img width="200" height="300" class="pull-center" alt="sample-image" src="images/neeraj_thesis_overview.png"></a>
-		   <br>Meanwhile, I am in search for my next research "habitat".
-		   <br><b>In case you have any opportunities (Post-Doc/Internship/Research Scientist positions), I will be happy to know more</b>.
-		   </li>
-		   <li> [15-07-2016] Gave my PhD Colloquium presenting our research findings.</li>
-		   <li> [(04-08)-07-2016] Participated in the enthralling <a href="https://sites.google.com/site/s4pdaiict2016/home">
-		   Summer School on Speech source modelling and its applications</a>, held at Gandhinagar.</li>
-	    </ul>
-
-         </div>
-      </div> <!-- Row End-->
-
-      <div class="row add-bottom">
-
-         <div class="twelve columns">
-
-            <h3>Ongoing Doctoral Thesis</h3>
-
-            <p align ="justify"><a href="#"><img width="120" height="120" class="pull-left" alt="sample-image" src="images/like_bw.png"></a>
-  			    Auditory motivated signal sampling and representation techniques:
-  			    Application to efficient analog-to-information conversion
-			    Sound is a stimuli which has been studied scientifically and modeled mathematically.
-			    The efforts have been quite successful when we look at the way our voice is transmitted for
-			    communication or music processing is done in studios based on these principles. However, the
-			    many tasks such as speech recognition, language learning, sound mixture segregation remain open
-			    problems for machine implementation and also speech processing through cochlear implants is far
-			    from satisfactory. We attempt to learn from the way mammalian auditory system performs signal
-			    processing and pattern recognition. The biological signal processing aspects are nonlinear and
-			    do not in general fall into the paradigm of linear time-invariant systems analysis.
-			    The performance (of the task performed) shows a graceful degradation with noise.
-			    With this motivation we are focusing on issue of efficient sampling, reconstruction, representation
-			    and coding of audio signals. In this research, we are exploring the following sub-topics which could
-			    yield new techniques for information and signal reconstruction with focus on auditory processing like
-			    representations.
-    A. sparse representation (for example compressive sampling) based reconstruction,
-    B. random sub-Nyquist, event-triggered sampling
-    C. noise assisted signal processing (example using stochastic resonance)
-            <p>A Doctoral Thesis ... a body of research that, in a small way, will move a field forward.</p>
-
-         </div>
-
-         <div class="twelve columns">
-
-            <h3>Courses Taken</h3>
-
-            <p class="drop-cap"> Random Processes, Pattern Recognition and Neural Networks,
-            Time-Frequency Analysis, Adaptive Signal Pro- cessing, Matrix Theory, Digital Signal Compression,
-            Non-linear Signal Processing, Stochastic Models for Speech Recognition, Digital Image Processing,
-            Introduction to Neuroscience. The above courses are the few I took from the big list at IISc.
-  			   </p>
-
-         </div>
-
-         <div class="twelve columns">
-
-            <h3>Teaching Assistantship</h3>
-
-            <p class="drop-cap"> Time Frequency Analysis (E9-213) in Jan-2012.
-            Course was offered by Prof. Chandra Sekhar Seelamantula.
-	    Signal Quantization and Compression (E9-221) in Aug-2011. Course was offered by Prof. T. V. Sreenivas.
-  			   </p>
-
-         </div>
-
-         <div class="twelve columns">
-
-            <h3>Internships, Conferences, and Workshops</h3>
-
-
-		<dl class="lining" align="justify">
-			      <dt><b>Audition Lab, Ecole Normale Superiere (ENS), Paris, [14 Apr to 08 June, 2014]</b></dt>
-				      <dd>I was a Visiting Student at <a href="http://audition.ens.fr/">Audition Lab</a>.
-				      I worked on an interesting concept of designing auditory skectches.
-				      I worked with mentorship and support from <a href="http://audition.ens.fr/dp/index.html">Daniel Pressnitzer</a>, and
-				      <a href="http://www.institut-langevin.espci.fr/laurent_daudet?lang=fr">Laurent Daudet</a> who had initially proposed the concept.
-				      I carried the concept further, and designed auditory sketches of a sound by jointly using peaks in time-frequency and
-				      rate-scale-time-frequency planes. I also proposed a metric to quantify the notion of auditory sketches suitable to
-				      compare quantify two sketches. The work is in progress and likely we will summarize it someday soon.</dd>
-			      <dt><b>Winter School in Speech and Audio Processing (WiSSAP), 2010-15, India</b></dt>
-				      <dd>I have attended all the WiSSAPs in this time span. It is a yearly workshop, and a very good learning experience to broaden
-				      what I do not know, and should know! In WiSSAP-2015 I gave a talk on Auditory modeling in the workshop.
-				      All the talks are hosted here: <a href="https://sites.google.com/site/wissap2015/program">click</a>.</dd>
-			      <dt><b>Mechanics of Hearing (MoH), 2014, Athens</b></dt>
-				      <dd>This is one of the best workshop I have attended. With all excellent researchers in one hall, and examining each others
-				      insights, it was amazing. I had a poster here. Got in touch with wonderfull people in auditory modeling.</dd>
-			      <dt><b>Int. Conf. Acoustics, Speech, and Signal Processing (ICASSP), 2012, Kyoto</b></dt>
-				      <dd>My first outside India conference visit. Again very nice experience.</dd>
-			      <dt><b>Int. Conf. Signal Processing and Communication (SPCOM), 2010,-12,-14, IISc Bangalore</b></dt>
-				      <dd>My first conference presentation in IISc. Our paper was selected in the top papers in the conference.</dd>
-			      <dt><b>Student Chapter Leadership Workshop at Photonics Europe, 2014, Brussels</b></dt>
-				      <dd>What makes a leader a leader! Spent 6 hrs with close to 20 people meeting first time, and each from a different country.
-				      Each sounded his/her thoughts on variety of topics and case-studies. Realized - Once you talk, it is then very easy to talk :-).
-				      </dd>
-			      <dt><b>Workshops on Signal Processing, Machine Learning in IISc, 2009-14</b></dt>
-				      <dd>Learnt lot with a trade-off of time consumption.</dd>
-     	        </dl>
-         </div>
-
-	 </section> 
-	 </div>
-	 <!-- Row End-->
-   <section id="portfolio" style="padding: 10px 0 12px; background: #fff;">
-<hr>      
-
-      <div class="row add-bottom">
-
-         <div class="twelve columns">
-
-            <h1>Peer-reviewed Published Findings</h1>
-		<dl class="lining" align="justify">
-			      <dt><b>Sparse signal reconstruction based on signal dependent non-uniform samples</b>
-			      <a href="http://ieeexplore.ieee.org/document/6288659/"> (In ICASSP'12, Kyoto)</a></dt>
-			      <br><a href="#" id="find1-show" class="showLink" onclick="showHide('find1');return false;">Click to expand.</a></p>
-				  <div id="find1" class="more">
-				  <p><a href="#" id="find1-hide" class="hideLink" onclick="showHide('find1');return false;">Hide this content.</a></p>
-				      <dd>The classical approach to A/D conversion has been uniform sampling and we get perfect reconstruction for
-				      bandlimited signals by satisfying the Nyquist Sampling Theorem. We propose a non-uniform sampling scheme based on level crossing
-				      (LC) time information. We show stable reconstruction of bandpass signals with correct scale factor and hence a unique reconstruction
-				      from only the non-uniform time information. For reconstruction from the level crossings we make use of the sparse reconstruction
-				      based optimization by constraining the bandpass signal to be sparse in its frequency content. While overdetermined system of equations
-				      is resorted to in the literature we use an undetermined approach along with sparse reconstruction formulation. We could get a
-				      reconstruction SNR >20dB and perfect support recovery with probability close to 1, in noise-less case and with lower probability
-				      in the noisy case. Random picking of LC from different levels over the same limited signal duration and for the same length of
-				      information, is seen to be advantageous for reconstruction.</dd>
-				      <p><a href="#" id="find1-hide" class="hideLink" onclick="showHide('find1');return false;">Hide this content.</a></p>
-				      </div>
-			      <dt><b>Event-triggered sampling and reconstruction of sparse trigonometric polynomials</b>
-			                  <a href="http://ieeexplore.ieee.org/document/6983916/"> (In SPCOM'14, Bangalore)</a></dt>
-			      <br><a href="#" id="find2-show" class="showLink" onclick="showHide('find2');return false;">Click to expand.</a></p>
-				  <div id="find2" class="more">
-				  <p><a href="#" id="find2-hide" class="hideLink" onclick="showHide('find2');return false;">Hide this content.</a></p>
-				      <dd>We propose data acquisition from continuous-time signals belonging to the class of real-valued trigonometric polynomials using
-				      an event-triggered sampling paradigm. The sampling schemes proposed are: level crossing (LC), close to extrema LC, and extrema sampling.
-				      Analysis of robustness of these schemes to jitter, and bandpass additive gaussian noise is presented. In general these sampling schemes
-				      will result in non-uniformly spaced sample instants. We address the issue of signal reconstruction from the acquired data-set by imposing
-				      structure of sparsity on the signal model to circumvent the problem of gap and density constraints. The recovery performance is contrasted
-				      amongst the various schemes and with random sampling scheme. In the proposed approach, both sampling and reconstruction are non-linear
-				      operations, and in contrast to random sampling methodologies proposed in compressive sensing these techniques may be implemented
-				      in practice with low-power circuitry.</dd>
-				      <p><a href="#" id="find2-hide" class="hideLink" onclick="showHide('find2');return false;">Hide this content.</a></p>
-				      </div>
-			      <dt><b>Moving Sound Source Parameter Estimation Using A Single Microphone And Signal Extrema Samples</b>
-			                  <a href="http://ieeexplore.ieee.org/document/7178387/"> (In ICASSP'15, Brisbane)</a></dt>
-			      <br><a href="#" id="find3-show" class="showLink" onclick="showHide('find3');return false;">Click to expand.</a></p>
-				  <div id="find3" class="more">
-				  <p><a href="#" id="find3-hide" class="hideLink" onclick="showHide('find3');return false;">Hide this content.</a></p>
-				      <dd>Estimating the parameters of moving sound sources using only the source signal is of interest in low-power, and contact-less source monitoring
-			      applications, such as, industrial robotics and bio-acoustics. The received signal embeds the motion attributes of the source via Doppler effect.
-			      In this paper, we analyze the Doppler effect on mixture of time-varying sinusoids. Focusing, on the instantaneous frequency (IF) of the received
-			      signal, we show that the IF profile composed of IF and its first two derivatives can be used to obtain source motion parameters. This requires
-			      a smooth estimate of IF profile. However, the numerical implementation of traditional approaches, such as analytic signal and energy separation
-			      approach, gives oscillatory behavior hence a non-smooth IF estimate. We devise an algorithm using non-uniformly spaced signal extrema samples
-			      of the received signal for smooth IF profile estimation. Using the smooth IF profiles for a source moving on a linear trajectory with constant
-			      velocity, an accurate estimate of moving source parameters is obtained. We see promise of this approach for an arbitrary trajectory motion
-			      parameter estimation.</dd>
-				      <p><a href="#" id="find3-hide" class="hideLink" onclick="showHide('find3');return false;">Hide this content.</a></p>
-				      </div>
-			      <dt><b>Time-instant Sampling Based Encoding of Time-varying Acoustic Spectrum</b>
-			                  <a href="http://scitation.aip.org/content/aip/proceeding/aipcp/10.1063/1.4939431"> (In MoH'14, Athens)</dt>
-			      <br><a href="#" id="find4-show" class="showLink" onclick="showHide('find4');return false;">Click to expand.</a></p>
-				  <div id="find4" class="more">
-				  <p><a href="#" id="find4-hide" class="hideLink" onclick="showHide('find4');return false;">Hide this content.</a></p>
-				      <dd>The inner ear has been shown to characterize an acoustic stimuli by transducing fluid motion in the inner ear to mechanical bending
-			      of stereocilia on the inner hair cells (IHCs). The excitation motion/energy transferred to an IHC is dependent on the frequency spectrum
-			      of the acoustic stimuli, and the spatial location of the IHC along the length of the basilar membrane (BM). Subsequently, the afferent
-			      auditory nerve fiber (ANF) bundle samples the encoded waveform in the IHCs by synapsing with them. In this work we focus on sampling of
-			      information by afferent ANFs from the IHCs, and show computationally that sampling at specific time instants is sufficient for decoding
-			      of time-varying acoustic spectrum embedded in the acoustic stimuli. The approach is based on sampling the signal at its zero-crossings
-			      and higher-order derivative zero-crossings. We show results of the approach on time-varying acoustic spectrum estimation from cricket
-			      call signal recording. The framework gives a time-domain and non-spatial processing perspective to auditory signal processing. The approach
-			      works on the full band signal, and is devoid of modeling any bandpass filtering mimicking the BM action. Instead, we motivate the approach
-			      from the perspective of event-triggered sampling by afferent ANFs on the stimuli encoded in the IHCs. Though the approach gives acoustic
-			      spectrum estimation but it is shallow on its complete understanding for plausible bio-mechanical replication with current mammalian auditory
-			      mechanics insights.</dd>
-				      <p><a href="#" id="find4-hide" class="hideLink" onclick="showHide('find4');return false;">Hide this content.</a></p>
-				      </div>
-			      <dt><b>Event-triggered Sampling Using Signal Extrema for Instantaneous Amplitude and Instantaneous Frequency Estimation</b>
-			                  <a href="http://www.sciencedirect.com/science/article/pii/S0165168415001383"> (In Signal Processing'15, Elsevier)</dt>
-			      <br><a href="#" id="find5-show" class="showLink" onclick="showHide('find5');return false;">Click to expand.</a></p>
-				  <div id="find5" class="more">
-				  <p><a href="#" id="find5-hide" class="hideLink" onclick="showHide('find5');return false;">Hide this content.</a></p>
-				      <dd>Event-triggered sampling (ETS) is a new approach towards efficient signal analysis. The goal of ETS need
-				 not be only signal reconstruction, but also direct estimation of desired information in the signal by skillful
-				 design of event. We show a promise of ETS approach towards better analysis of oscillatory non-stationary
-				  signals modeled by a time-varying sinusoid, when compared to existing uniform Nyquist-rate sampling
-				  based signal processing. We examine samples drawn using ETS, with events as zero-crossing (ZC), level-
-				  crossing (LC), and extrema, for additive in-band noise and jitter in detection instant. We find that extrema
-				  samples are robust, and also facilitate instantaneous amplitude (IA), and instantaneous frequency (IF)
-				  estimation in a time-varying sinusoid. The estimation is proposed solely using extrema samples, and a local
-				  polynomial regression based least-squares fitting approach. The proposed approach shows improvement, for
-				  noisy signals, over widely used analytic signal, energy separation, and ZC based approaches (which are based
-				  on uniform Nyquist-rate sampling based data-acquisition and processing). Further, extrema based ETS in
-				  general gives a sub-sampled representation (relative to Nyquist-rate) of a time-varying sinusoid. For the
-				  same data-set size captured with extrema based ETS, and uniform sampling, the former gives much better
-				  IA and IF estimation.</dd>
-				      <p><a href="#" id="find5-hide" class="hideLink" onclick="showHide('find5');return false;">Hide this content.</a></p>
-				      </div>
-<!--			      <dt><b>Workshops on Signal Processing, Machine Learning in IISc, 2009-14</b></dt>
-				      <dd>Learnt lot with a trade-off of time consumption.</dd>-->
-     	        </dl>
-            <hr>
-
-         </div>
-
-      </div>
-    </section>
-     <!-- Row End-->
-   <section id="extras" style="padding: 10px 0 12px; background: #fff;">
-      
-      <div class="row add-bottom">
-
-         <div class="eight columns add-bottom">
-
-            <h3 class="add-bottom">Other than Research</h3>
-
-            <h5>a) Execom Member of IEEE-IISc Student Branch (2012-13)</h5>
-
-            <dl><dd>Got Best Volunter Award for the year 2012-13. Together with a very sporty team of volunteers  in our Execom, and team lead by Prof. T. Srinivas
-                   we had a wonderful set of activities in and around campus.</dd>
-		      </dl>
-
-            <h5>b) IISc ECE Dept. WebTeam Member (2014-15)</h5>
-            <dl><dd>Together with set of 3 more members and spearheaded by Prof. Chandra R. Murthy I often maintain the ECE website.</dd>
-		      </dl>
-
-            <h5>c) Sunday Cricket League (SCL, 2014-15)</h5>
-            <dl><dd>Every sunday we have huge fun making our adrenaline flow to bowl, bat and field.</dd>
-		      </dl>
-	    <h5>d) Camera clicks</h5>
-            <dl><dd>Very often I get amazed by nature, and on getting an opportunity I click-capture-upload
-                   some pictures here:<a href="http://plus.google.com/photos/105488459294685890549/albums/5735551428745390145?authkey=CM2M8qOuz5iONw" target="_blank">
-            click to see</a>. What you see only deciphers your thoughts.:-)</dd>
-            <dl><dd>Also, I like the amazing natural beauty in IISc campus. My collection of some photography in the campus is here:
-            <a href="https://goo.gl/photos/UVGHjzrN4i1gqoWX8" target="_blank">click to see</a>. I find it very difficult to prune the selection!</dd>
-            </dl>			      
-         </div>
-
-         <div class="four columns add-bottom">
-
-            <h3>I also learn a lot from many. Few of them are:</h3>
-
-            <ul class="disc">
-				   <li><a href ="https://www.sites.google.com/site/aragondaharicharan/" target="_blank">Haricharan A</a></li>
-				   <li><a href ="http://www.sagiisc.in/home" target="_blank">Speech and Audio Group (SAG, my group)</a></li>
-				   <li><a href ="https://www.iitm.ac.in/info/fac/tijuthomas" target="_blank">Tiju Thomas</a></li>
-			   </ul>
-            <h3>I have hosted some of my audio signal demos at:</h3>
-
-            <ul class="disc">
-				   <li><a href ="https://www.ece.iisc.ernet.in/~neeraj_sharma/demos/probing_sound.html" target="_blank">Sketching Sound</a></li>
-				   <li><a href ="https://www.ece.iisc.ernet.in/~neeraj_sharma/demos/amfm_syn_demo_v0.html" target="_blank">Synthesized Voiced Sounds</a></li>
-				   <li><a href ="http://ece.iisc.ernet.in/~neeraj_sharma/demos/tsm/tsm_demo.html" target="_blank">Time-Scale Modifications</a></li>
-				   <li><a href ="http://ece.iisc.ernet.in/~neeraj_sharma/demos/audio_recordings.html" target="_blank">Audio Recordings</a></li>
-<!--				   <li><a href ="http://ece.iisc.ernet.in/~neeraj_sharma/demos/hfs.html" target="_blank">Harmonic Decomposition</a></li>-->
-				   <li><a href ="http://ece.iisc.ernet.in/~neeraj_sharma/demos/psm_hfs.html" target="_blank">Pitch Scale Modification</a></li>
-				   <li><a href ="http://ece.iisc.ernet.in/~neeraj_sharma/demos/tipsntricks.html" target="_blank">Tips-n-Tricks</a></li>
-	    </ul>
-         </div>
-
-         <hr />
-
-      </div> <!-- Row End-->
-      <div class="row add-bottom">
-
-         <div class="six columns add-bottom">
-
-            <h3>Quotes</h3>
-
-            <aside class="pull-quote">
-    			   <blockquote>
-    				   <p>Time, in this universe, is a signal which can never be corrupted.
-    				   Take care how you use the instants.</p>
-    				   <cite>
-   				   <a href="http://www.sagiisc.in/people/faculty">T.V. Sreenivas</a>
-   				</cite>
-    				</blockquote> 
-    			</aside>
-
-         </div>
-
-         <div class="six columns add-bottom">
-
-<!--            <h3>Quotes</h3>-->
-
-            <blockquote>
-   			   <p>Use the sunrise as an alarm. It has no snooze.
-   			   </p>
-   				<cite>
-   				   <a href="#">Thoughts</a>
-   				</cite>
-			   </blockquote>
-
-            <blockquote>
-               <p>Good and bad is a function of surroundings.</p>
-               <cite>
-      		   <a href="https://www.sites.google.com/site/aragondaharicharan/">Haricharan</a>
-               </cite>
-            </blockquote>
-         </div>
-
-         <hr />
-
-      </div> <!-- Row End-->
- 
-      <div class="row">
-
-         <div class="twelve columns">
-            <h3 class="half-bottom">Write-ups, Talks, Good books, and ...</h3>
-         </div>
-
-      </div> <!-- Row End-->
-
-      <!--<h4>1/3 Columns</h4>  -->
-
-      <div class="row">
-
-         <div class="four columns">
-		      <p><b>"Throwing Light into the Tunnel: auditory models and perception"</b>
-		      <br>[inivited talk in WiSSAP-2015, 04-01-2015]
-                      <a href="https://drive.google.com/file/d/0B4FDnQBIgT5rV1oyOFNIck1UOVE/view">Click here</a> to get the PDF.
-		      </p>
-		      
-		      <p><b>"Sound Analysis: some knowns and unknowns"</b>
-                      <br>
-                      [in SIAM-IISc Chapter Student Talk Series, @IISc, 08-05-2015]
-                      <br>
-                      <a href="http://ece.iisc.ernet.in/~neeraj_sharma/docs/on_iknow_siam_sound_analysis.pdf">Click here</a> to get the PDF.
-		      </p>
-		      
-	      </div>
-
-         <div class="four columns">
-		      <p><b>"Detect and Sample: an event-triggered approach for data acquisition and processing"</b>
-		      <br>[Work Discussion at ICTS-IISc Workshop, 08-01-2015]
-		      </p>
-		      
-		      <p><b>"Turns are Good: Processing Extrema of a Nonstationary Narrowband Signal"</b>
-		      <br>[Delivered in Spectrum Lab, IISc, 22-10-2013]
-		      </p>
-		      
-      		      <p><b>"Function Approximations"</b>
-		      <br>[Links to some good PDFs, 11-01-2016]
-		      Taylor, Fourier, Chebyshev, Pade, ...
-		      <a href="http://caig.cs.nctu.edu.tw/course/NM07S/slides/chap4_1.pdf">Click here</a> to get the PDF.
-		      </p>
-	      </div>
-
-         <div class="four columns">
-		      <p><b>"Detect and Sample: Questioning uniform Nyquist-rate sampling"</b>
-		      <br>[Delivered on IEEE Day celebrations in campus, 01-10-2013]
-		      </p>
-
-	      </div>
-
-       </div>
-
-      <!--<h4>1/4 Columns</h4>  -->
-
-      <div class="row">
-
-         <div class="three columns">
-		      <p><b>Technical books I have liked</b>: I sometimes update the rarely updated list here: <a href="http://ece.iisc.ernet.in/~neeraj_sharma/resources.html">click
-		      </a>.</p>
-	      </div>
-
-      </div>
-      </section>
-
- <!-- Resume Section End-->
-
-
-   <!-- footer
-   ================================================== -->
-   <footer>
-
-      <div class="row">
-
-         <div class="twelve columns">
-
-            <ul class="social-links">
-<!--               <li><a href="#"><i class="fa fa-facebook"></i></a></li>-->
-               <li><a href="https://twitter.com/neeksww"><i class="fa fa-twitter"></i></a></li>
-               <li><a href="https://plus.google.com/communities/106414622057320932578"><i class="fa fa-google-plus"></i></a></li>
-<!--               <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-               <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-               <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-               <li><a href="#"><i class="fa fa-skype"></i></a></li>-->
-            </ul>
-
-            <ul class="copyright">
-               <li>&copy; Copyright 2015 Neeks</li>
-               <li>Design by <a title="Styleshout" href="http://www.styleshout.com/">Styleshout</a></li>   
-            </ul>
-
-         </div>
-
-         <div id="go-top" style="display: block;"><a class="smoothscroll" title="Back to Top" href="#home"><i class="icon-up-open"></i></a></div>
-
-      </div>
-
-   </footer> <!-- Footer End-->
-
-   <!-- Java Script
-   ================================================== -->
-   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-   <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
-   <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
-
-   <script src="js/jquery.flexslider.js"></script>
-   <script src="js/waypoints.js"></script>
-   <script src="js/jquery.fittext.js"></script>
-   <script src="js/magnific-popup.js"></script>
-   <script src="js/doubletaptogo.js"></script>
-   <script src="js/spin.js"></script>
-
-   <script src="js/init.js"></script>
-
-</body>
-
-</html>
+<div id="header">
+  <div id="name"> Jitendra Kumar Dhiman
+  <!--<a href="http://www.math.dartmouth.edu/gallery/grad-photos/" target="_top">First.M.LastName&nbsp;&nbsp;</a>-->
+  </div>
+<br clear="all">
+
+  <div id="credentials">
+  Ph.D. Scholar @ Spectrum Lab, Department of Electrical Engineering, Indian Institute of Science<br>
+  </div>
+</div>  <!-- End header div -->
+
+<br>
+<div id="main">
+<center>
+<table>
+<tbody><tr>
+<td align="center" valign="bottom">
+<h4>
+| <a href="./index.html">Home</a> |
+<a href="./research_interests.html">Research Interests</a> |
+<a href="./coursework.html">Coursework</a> | 
+<a href="./publications.html">Publications</a> | 
+<a href="./others.html">Others</a> |
+<a href="./contactme.html">Contact me</a> |
+<a href="./Resources.html">Resources</a> |
+</h4>
+</td>
+</tr>
+</tbody></table> <br>
+</center>
+
+<div id="right">
+<img src="./images/myphoto1.jpg" alt="random image" width="230" align="right">
+</div>
+
+
+<div id="left">
+<h2>About me</h2>
+<p>Welcome ! </p>
+<p>I am a Ph.D. scholar in Spectrum lab, at <a href="http://www.ee.iisc.ac.in/">Electrical Engineering Dept.</a>, <a href="http://www.iisc.ac.in/">Indian Institute of Science (IISc)</a>, Bengaluru, since July 2014. I have been working with <a href="https://sites.google.com/site/chandrasekharseelamantula/home">Dr. Chandra Sekhar Seelamantula </a> since August 2014. </p>
+<p>Prior to joining IISc, I received M.Tech. degree from Indian Institute of Technology (IIT), Hyderabad, under the supervision of <a href = "https://sites.google.com/iith.ac.in/ksrm/home">Dr. K Sri Rama Murty</a>, in 2013.</p>
+
+<!--I did my B.E. from Government Engineering College (College of Technology and Engineering), Udaipur, Rajasthan, in Electronics in Communication, 2013.-->
+
+
+</div>
+
+<div id="footer">
+
+<br clear="all">
+
+
+<!--<table cellpadding="2">
+<tbody><tr>
+  <td><i>Last modified on September 09, 2012.</i></td>
+</tr>
+</tbody></table>-->
+
+</div>
+
+
+
+
+
+
+
+</body></html>
