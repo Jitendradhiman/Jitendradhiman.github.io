@@ -112,11 +112,6 @@ a:hover.small {
 }
 
 
-#main img {
-border:#777777 2px solid;
-}
-
-
 #main #left table {
 border-collapse: collapse;
 font-size: .9em;
@@ -184,3 +179,18 @@ font-size: .9em;
 #footer a {
 font-size: 1em;
 }
+.social img {
+  border: none;
+  width: 1.0em;
+  padding-right: 0.1em;
+  vertical-align: middle
+}
+
+ul.social {
+  padding-left: 0.7em;
+  list-style-type: none;
+}
+section.info {
+  clear: both;
+}
+
