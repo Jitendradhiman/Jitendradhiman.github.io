@@ -7,7 +7,7 @@ body {
   margin-top: 0px;
   margin-right: auto;
   
-  font-family: sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
   font-weight: normal;
   font-variant: normal;
   font-size: 1em;
@@ -52,7 +52,7 @@ small.bold {
         color:#005000;
         color:#eeeeee;
         font-weight: normal;
-        font-family: Georgia, Times New Roman, sans-serif;
+        font-family: Helvetica, Arial, sans-serif;
         font-size: 1.4em;
  	padding: 0;
         letter-spacing: 1px; 
@@ -66,20 +66,23 @@ small.bold {
 
         color:#004000;
         color:#000000;
+  color: #808080;
+
         font-weight:normal;
-        font-family:  Trebuchet MS, Georgia, Arial, serif;
+        font-family:  Helvetica, Arial, serif;
         font-style:italic;
         font-size:.9em;
 }
 a {
   color: #aaaaaa;
-  color: green;
+  color: blue;
   text-decoration: none;
   font-size: .9em;
-  font-family: sans-serif;
+  font-family: Helvetica, Arial,sans-serif;
 }
 
 a:hover {
+  text-decoration: underline;
   color: #5577ff;
   color: red;
 }
@@ -107,11 +110,9 @@ a:hover.small {
 
 #main #left {
         font-weight: normal;
-	font-family:   Bitstream Vera Serif, Georgia, Times New Roman, sans-serif;
+	font-family:   Helvetica, Arial, sans-serif;
 	font-size:.9em;
 }
-
-
 
 
 #main #left table {
