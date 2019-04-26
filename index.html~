@@ -39,7 +39,7 @@
 <td align="center" valign="bottom">
 <h4>
 | <a href="./index.html">Home</a> |
-<a href="./research_interests.html">Research Interests</a> |
+<a href="./research_interests.html">Research</a> |
 <!--<a href="./coursework.html">Coursework</a> |--> 
 <a href="./publications.html">Publications</a> |
 <a href="./talks.html">Presentations</a> |
@@ -60,7 +60,7 @@
 <h2>About me</h2>
 <p>Welcome ! </p>
 <p>I am a Ph.D. scholar in Spectrum lab, at <a href="http://www.ee.iisc.ac.in/">Electrical Engineering Dept.</a>, <a href="http://www.iisc.ac.in/">Indian Institute of Science (IISc)</a>, Bengaluru, since July 2014. I have been working with <a href="https://sites.google.com/site/chandrasekharseelamantula/home">Prof. Chandra Sekhar Seelamantula </a> since August 2014. </p>
-<p>I received M.Tech. degree from Indian Institute of Technology (IIT), Hyderabad, under the supervision of <a href = "https://sites.google.com/iith.ac.in/ksrm/home">Dr. K Sri Rama Murty</a>, in 2013.</p>
+<p>I received M.Tech. degree from Indian Institute of Technology (IIT), Hyderabad, under the supervision of <a href = "https://sites.google.com/iith.ac.in/ksrm/home">Prof. K Sri Rama Murty</a>, in 2013.</p>
 <section class="info">
 <h2>Biography</h2>
 <ul>
@@ -74,8 +74,6 @@
 <li><img src="images/linkedin.svg" alt=""/> <a href="linkedin.com/in/jitendra-dhiman-b02462a0">LinkedIn</a></li>
 </ul>
 </section>
-<!--I did my B.E. from Government Engineering College (College of Technology and Engineering), Udaipur, Rajasthan, in Electronics in Communication, 2013.-->
-
 </div>
 <div id="footer">
 <br clear="all">
