@@ -40,19 +40,12 @@
 </tbody></table> <br>
 </center>
 
-<div id
+<div id="right">
 <img src="./images/myphoto1.jpg" alt="random image" width="230" align="right">
 </div>
 
 <div id="left">
-<p>Speech processing and machine learning. In my Ph.D., I am developing a novel two-dimensional (2-D) framework for speech analysis. 
-In contrast to one-dimesional (1-D) short-time processing of speech signals, the proposed 2-D analysis of speech signal is applied jointly along time and frequency dimension of a time-frequency speech distribution such as a spectrogram.
-The smaller spectro-temporal spectrogram patches are modeled using 2-D amplitude- and frequency modulated cosine carrier signals. The amplitude (AM) and frequency modulations are seperated using a 2-D demodulation technique which employ a new tool: The complex Riesz transform.
-This highly accurate spectrogram demodulation technique gives AM and FM components which correspond to vocal-tract filter magnitude response and the 2-D source excitation signal, respectively.
-The proposed framework gives several new insights into the speech signal characteristics jointly in time and frequency domain.
-The proposed technique is applied for several fundamental speech processing tasks such pitch estimation, periodic/aperiodic speech separation, voiced/unvoiced speech separation, the time-frequency noise modeling for voiced and unvoiced sounds and the estimation vocal-tract filter magnitude response.
-Thus, this new class of algorithms can be highly promissing for speech analysis and synthesis.  
-</p>
+<p>Speech processing, machine learning</p>
 
 <!--I did my B.E. from Government Engineering College (College of Technology and Engineering), Udaipur, Rajasthan, in Electronics in Communication, 2013.-->
 
