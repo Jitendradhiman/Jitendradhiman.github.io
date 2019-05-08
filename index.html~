@@ -74,6 +74,13 @@
 <ul class ="social">
 <li><img src="images/linkedin.svg" alt=""/> <a href="linkedin.com/in/jitendra-dhiman-b02462a0">LinkedIn</a></li>
 </ul>-->
+<h2>Social</h2>
+<ul class ="social">
+<div id="left">
+<img src="images/linkedin.svg" alt=""/>
+<a href="https://linkedin.com/in/jitendra-dhiman-b02462a0">LinkedIn</a>
+</ul>
+</div>
 </section>
 </div>
 <div id="footer">
