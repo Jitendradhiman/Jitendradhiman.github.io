@@ -27,7 +27,7 @@
 <h4>
 | <a href="./index.html">Home</a> |
 <a href="./research_interests.html">Research</a> |
-<a href="./coursework.html">Coursework</a> | 
+<!--<a href="./coursework.html">Coursework</a> |--> 
 <a href="./publications.html">Publications</a> | 
 <a href="./others.html">Others</a> |
 <a href="./contactme.html">Contact me</a> |
@@ -52,7 +52,7 @@ We construct a narrowband speech spectrogram and devide it into smaller local sp
 <p>This highly accurate spectrogram demodulation technique gives 2-D AM and FM components which correspond to the vocal-tract filter magnitude response and the 2-D source excitation signal, respectively.</p>
 <p>Inspired from the speech production mechanism,  the proposed framework gives several new insights into the speech signal characteristics jointly in the time-frequency plane.
 We employ the proposed model for several fundamental speech processing tasks such as pitch estimation, periodic/aperiodic speech separation, voiced/unvoiced speech separation, the time-frequency noise modeling for voiced and unvoiced speech sounds and the estimation of vocal-tract filter magnitude response.
-The estimated speech parameters are validated by incorporating them in source-filter theory based vocoders and the recently proposed deep-learning based vocoders such as waveNet.
+The estimated speech parameters are validated by incorporating them in source-filter theory based vocoders and recently proposed deep-learning based vocoders such as waveNet.
 Thus, this new class of algorithms can be highly promising for speech analysis and synthesis.  
 </p>
 
