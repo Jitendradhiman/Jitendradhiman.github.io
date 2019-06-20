@@ -1,200 +1,183 @@
-   <!DOCTYPE html>
-<html>
-<head>
-	<title></title>
-</head>
-    <body>
-    <h3>Demonstration page</h3><br>"Analysis/synthesis using corrected envelope"
-    <table>
-    	<tr>
-		<th></th>
-		<th>Original</th>
-		<th>WORLD</th>
-		<th>Before AM correction</th>
-		<th>After AM correction</th>
-	</tr>
-	<tr>
-		<td>bdl_01:</td>
-		<td> <audio controls style="width: 240px"><source src="./media/RZAMCorrectionAndAP/bdl_01.wav" type="audio/wav">
-        </audio></td>
-        <td> <audio controls style="width: 240px"><source src="./media/RZAMCorrectionAndAP/bdl_01WORLD.wav" type="audio/wav">
-        </audio></td>
-        <td> <audio controls style="width: 240px"><source src="./media/RZAMCorrectionAndAP/bdl_01BeforeCorrectionFilter.wav" type="audio/wav">
-        </audio></td>
-        <td> <audio controls style="width: 240px"><source src="./media/RZAMCorrectionAndAP/bdl_01RZsynth_AfterComp.wav" type="audio/wav">
-        </audio></td>
-	</tr>
-	<tr>
-		<td>bdl_02:</td>
-		<td> <audio controls style="width: 240px"><source src="./media/RZAMCorrectionAndAP/bdl_02.wav" type="audio/wav">
-        </audio></td>
-        <td> <audio controls style="width: 240px"><source src="./media/RZAMCorrectionAndAP/bdl_02WORLD.wav" type="audio/wav">
-        </audio></td>
-        <td> <audio controls style="width: 240px"><source src="./media/RZAMCorrectionAndAP/bdl_02BeforeCorrectionFilter.wav" type="audio/wav">
-        </audio></td>
-        <td> <audio controls style="width: 240px"><source src="./media/RZAMCorrectionAndAP/bdl_02RZsynth_AfterComp.wav" type="audio/wav">
-        </audio></td>
-	</tr>
-	<tr>
-		<td>bdl_03:</td>
-		<td> <audio controls style="width: 240px"><source src="./media/RZAMCorrectionAndAP/bdl_03.wav" type="audio/wav">
-        </audio></td>
-        <td> <audio controls style="width: 240px"><source src="./media/RZAMCorrectionAndAP/bdl_03WORLD.wav" type="audio/wav">
-        </audio></td>
-        <td> <audio controls style="width: 240px"><source src="./media/RZAMCorrectionAndAP/bdl_03BeforeCorrectionFilter.wav" type="audio/wav">
-        </audio></td>
-        <td> <audio controls style="width: 240px"><source src="./media/RZAMCorrectionAndAP/bdl_03RZsynth_AfterComp.wav" type="audio/wav">
-        </audio></td>
-       </tr>
-       <tr>
-	<tr>
-		<td>bdl_04:</td>
-		<td> <audio controls style="width: 240px"><source src="./media/RZAMCorrectionAndAP/bdl_04.wav" type="audio/wav">
-        </audio></td>
-        <td> <audio controls style="width: 240px"><source src="./media/RZAMCorrectionAndAP/bdl_04WORLD.wav" type="audio/wav">
-        </audio></td>
-        <td> <audio controls style="width: 240px"><source src="./media/RZAMCorrectionAndAP/bdl_04BeforeCorrectionFilter.wav" type="audio/wav">
-        </audio></td>
-        <td> <audio controls style="width: 240px"><source src="./media/RZAMCorrectionAndAP/bdl_04RZsynth_AfterComp.wav" type="audio/wav">
-        </audio></td>
-	</tr>
-	<tr>
-		<td>slt_01:</td>
-		<td> <audio controls style="width: 240px"><source src="./media/RZAMCorrectionAndAP/slt_01.wav" type="audio/wav">
-        </audio></td>
-        <td> <audio controls style="width: 240px"><source src="./media/RZAMCorrectionAndAP/slt_01WORLD.wav" type="audio/wav">
-        </audio></td>
-        <td> <audio controls style="width: 240px"><source src="./media/RZAMCorrectionAndAP/slt_01BeforeCorrectionFilter.wav" type="audio/wav">
-        </audio></td>
-        <td> <audio controls style="width: 240px"><source src="./media/RZAMCorrectionAndAP/slt_01RZsynth_AfterComp.wav" type="audio/wav">
-        </audio></td>
-	</tr>
-	<tr>
-		<td>slt_02:</td>
-		<td> <audio controls style="width: 240px"><source src="./media/RZAMCorrectionAndAP/slt_02.wav" type="audio/wav">
-        </audio></td>
-        <td> <audio controls style="width: 240px"><source src="./media/RZAMCorrectionAndAP/slt_02WORLD.wav" type="audio/wav">
-        </audio></td>
-        <td> <audio controls style="width: 240px"><source src="./media/RZAMCorrectionAndAP/slt_02BeforeCorrectionFilter.wav" type="audio/wav">
-        </audio></td>
-        <td> <audio controls style="width: 240px"><source src="./media/RZAMCorrectionAndAP/slt_02RZsynth_AfterComp.wav" type="audio/wav">
-        </audio></td>
-	</tr>
+
+
+    <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+        "http://www.w3.org/TR/html4/strict.dtd">
+    <html lang="en">
+        <head>
+            <meta http-equiv="content-type" content="text/html; charset=utf-8">
+            <title>Demonstration page for "Riesz Transform-based Speech Synthesis"</title>
+            <link href="demotable.css" rel="stylesheet" type="text/css">
+            <!--<script type="text/javascript" src="script.js"></script>-->
+        </head>
+        <body>
+        <div id="title">
+        Demonstration page for
+        <h1>Riesz transform-based speech synthesis <br/> </h1>
+        Jitendra Kumar Dhiman and Chandra Sekhar Seelamantula
+        </div>
+        <br/>
+        <h4>XXX) Speech samples using STRAIGHT, WORLD, RIESZ (analysis/re-synthesis) </h4>
+    <br/>BDL<table class="demotable">
+<tr><td> </td><th>Original</th><th>STRAIGHT</th><th>WORLD</th><th>RZ (Before AM correction)</th><th>RZ (After AM correction)</th></tr>
+
 <tr>
-		<td>slt_03:</td>
-		<td> <audio controls style="width: 240px"><source src="./media/RZAMCorrectionAndAP/slt_03.wav" type="audio/wav">
-        </audio></td>
-        <td> <audio controls style="width: 240px"><source src="./media/RZAMCorrectionAndAP/slt_03WORLD.wav" type="audio/wav">
-        </audio></td>
-        <td> <audio controls style="width: 240px"><source src="./media/RZAMCorrectionAndAP/slt_03BeforeCorrectionFilter.wav" type="audio/wav">
-        </audio></td>
-        <td> <audio controls style="width: 240px"><source src="./media/RZAMCorrectionAndAP/slt_03RZsynth_AfterComp.wav" type="audio/wav">
-        </audio></td>
-	</tr>
-	<tr>
-		<td>slt_04:</td>
-		<td> <audio controls style="width: 240px"><source src="./media/RZAMCorrectionAndAP/slt_04.wav" type="audio/wav">
-        </audio></td>
-        <td> <audio controls style="width: 240px"><source src="./media/RZAMCorrectionAndAP/slt_04WORLD.wav" type="audio/wav">
-        </audio></td>
-        <td> <audio controls style="width: 240px"><source src="./media/RZAMCorrectionAndAP/slt_04BeforeCorrectionFilter.wav" type="audio/wav">
-        </audio></td>
-        <td> <audio controls style="width: 240px"><source src="./media/RZAMCorrectionAndAP/slt_04RZsynth_AfterComp.wav" type="audio/wav">
-        </audio></td>
-	</tr>
-	<!-- --------- Starkey ----------->
-	<!-- I want to draw a line here, how to do that-->
-	<hr> </hr>
-	<tr>
-		<td>M1_S1:</td>
-		<td> <audio controls style="width: 240px"><source src="./media/StarkeyAMCorrection/M1_S1.wav" type="audio/wav">
-        </audio></td>
-        <td> <audio controls style="width: 240px"><source src="./media/StarkeyAMCorrection/maleTalker1S1WORLD.wav" type="audio/wav">
-        </audio></td>
-        <td> <audio controls style="width: 240px"><source src="./media/StarkeyAMCorrection/maleTalker1S1BW0.8_3T0BeforeSmoothing.wav" type="audio/wav">
-        </audio></td>
-        <td> <audio controls style="width: 240px"><source src="./media/StarkeyAMCorrection/maleTalker1S1BW0.8_3T0AfterCorrectionFilter.wav" type="audio/wav">
-        </audio></td>
-	</tr>
-	<tr>
-		<td>M1_S2:</td>
-		<td> <audio controls style="width: 240px"><source src="./media/StarkeyAMCorrection/M1_S2.wav" type="audio/wav">
-        </audio></td>
-        <td> <audio controls style="width: 240px"><source src="./media/StarkeyAMCorrection/maleTalker1S2WORLD.wav" type="audio/wav">
-        </audio></td>
-        <td> <audio controls style="width: 240px"><source src="./media/StarkeyAMCorrection/maleTalker1S2BW0.8_3T0BeforeSmoothing.wav" type="audio/wav">
-        </audio></td>
-        <td> <audio controls style="width: 240px"><source src="./media/StarkeyAMCorrection/maleTalker1S2BW0.8_3T0AfterCorrectionFilter.wav" type="audio/wav">
-        </audio></td>
-	</tr>
-	<tr>
-		<td>M1_S3:</td>
-		<td> <audio controls style="width: 240px"><source src="./media/StarkeyAMCorrection/M1_S3.wav" type="audio/wav">
-        </audio></td>
-        <td> <audio controls style="width: 240px"><source src="./media/StarkeyAMCorrection/maleTalker1S3WORLD.wav" type="audio/wav">
-        </audio></td>
-        <td> <audio controls style="width: 240px"><source src="./media/StarkeyAMCorrection/maleTalker1S3BW0.8_3T0BeforeSmoothing.wav" type="audio/wav">
-        </audio></td>
-        <td> <audio controls style="width: 240px"><source src="./media/StarkeyAMCorrection/maleTalker1S3BW0.8_3T0AfterCorrectionFilter.wav" type="audio/wav">
-        </audio></td>
-	</tr>
-	<tr>
-		<td>M1_S4:</td>
-		<td> <audio controls style="width: 240px"><source src="./media/StarkeyAMCorrection/M1_S4.wav" type="audio/wav">
-        </audio></td>
-        <td> <audio controls style="width: 240px"><source src="./media/StarkeyAMCorrection/maleTalker1S4WORLD.wav" type="audio/wav">
-        </audio></td>
-        <td> <audio controls style="width: 240px"><source src="./media/StarkeyAMCorrection/maleTalker1S4BW0.8_3T0BeforeSmoothing.wav" type="audio/wav">
-        </audio></td>
-        <td> <audio controls style="width: 240px"><source src="./media/StarkeyAMCorrection/maleTalker1S4BW0.8_3T0AfterCorrectionFilter.wav" type="audio/wav">
-        </audio></td>
-	</tr>
-	<tr>
-		<td>F1_S1:</td>
-		<td> <audio controls style="width: 240px"><source src="./media/StarkeyAMCorrection/F1_S1.wav" type="audio/wav">
-        </audio></td>
-        <td> <audio controls style="width: 240px"><source src="./media/StarkeyAMCorrection/femaleTalker1S1WORLD.wav" type="audio/wav">
-        </audio></td>
-        <td> <audio controls style="width: 240px"><source src="./media/StarkeyAMCorrection/femaleTalker1S1BW0.8_3T0BeforeSmoothing.wav" type="audio/wav">
-        </audio></td>
-        <td> <audio controls style="width: 240px"><source src="./media/StarkeyAMCorrection/femaleTalker1S1BW0.8_3T0AfterCorrectionFilter.wav" type="audio/wav">
-        </audio></td>
-	</tr>
-	<tr>
-		<td>F1_S2:</td>
-		<td> <audio controls style="width: 240px"><source src="./media/StarkeyAMCorrection/F1_S2.wav" type="audio/wav">
-        </audio></td>
-        <td> <audio controls style="width: 240px"><source src="./media/StarkeyAMCorrection/femaleTalker1S2WORLD.wav" type="audio/wav">
-        </audio></td>
-        <td> <audio controls style="width: 240px"><source src="./media/StarkeyAMCorrection/femaleTalker1S2BW0.8_3T0BeforeSmoothing.wav" type="audio/wav">
-        </audio></td>
-        <td> <audio controls style="width: 240px"><source src="./media/StarkeyAMCorrection/femaleTalker1S2BW0.8_3T0AfterCorrectionFilter.wav" type="audio/wav">
-        </audio></td>
-	</tr>
-	<tr>
-		<td>F1_S3:</td>
-		<td> <audio controls style="width: 240px"><source src="./media/StarkeyAMCorrection/F1_S3.wav" type="audio/wav">
-        </audio></td>
-        <td> <audio controls style="width: 240px"><source src="./media/StarkeyAMCorrection/femaleTalker1S3WORLD.wav" type="audio/wav">
-        </audio></td>
-        <td> <audio controls style="width: 240px"><source src="./media/StarkeyAMCorrection/femaleTalker1S3BW0.8_3T0BeforeSmoothing.wav" type="audio/wav">
-        </audio></td>
-        <td> <audio controls style="width: 240px"><source src="./media/StarkeyAMCorrection/femaleTalker1S3BW0.8_3T0AfterCorrectionFilter.wav" type="audio/wav">
-        </audio></td>
-	</tr>
-    <tr>
-		<td>F1_S4:</td>
-		<td> <audio controls style="width: 240px"><source src="./media/StarkeyAMCorrection/F1_S4.wav" type="audio/wav">
-        </audio></td>
-        <td> <audio controls style="width: 240px"><source src="./media/StarkeyAMCorrection/femaleTalker1S4WORLD.wav" type="audio/wav">
-        </audio></td>
-        <td> <audio controls style="width: 240px"><source src="./media/StarkeyAMCorrection/femaleTalker1S4BW0.8_3T0BeforeSmoothing.wav" type="audio/wav">
-        </audio></td>
-        <td> <audio controls style="width: 240px"><source src="./media/StarkeyAMCorrection/femaleTalker1S4BW0.8_3T0AfterCorrectionFilter.wav" type="audio/wav">
-        </audio></td>
-	</tr>
+    <th align="middle"> arctic_a001.wav </th>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 210px; height: 20px"><source src="RZAMCorrectionAndAP/bdl_01.wav" type="audio/wav">Audio element not supported</audio></td>
+    <!--<td align="middle"><table class="invisible">-->
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 210px; height: 20px"><source src="RZAMCorrectionAndAP/.wav" type="audio/wav">Audio element not supported</audio></td>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 210px; height: 20px"><source src="RZAMCorrectionAndAP/bdl_01WORLD.wav" type="audio/wav">Audio element not supported</audio></td>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 210px; height: 20px"><source src="RZAMCorrectionAndAP/bdl_01BeforeCorrectionFilter.wav" type="audio/wav">Audio element not supported</audio></td>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 210px; height: 20px"><source src="RZAMCorrectionAndAP/bdl_01RZsynth_AfterComp.wav" type="audio/wav">Audio element not supported</audio></td>
+</tr>
+<tr>
+    <th align="middle"> arctic_a002.wav </th>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 210px; height: 20px"><source src="RZAMCorrectionAndAP/bdl_02.wav" type="audio/wav">Audio element not supported</audio></td>
+    <!--<td align="middle"><table class="invisible">-->
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 210px; height: 20px"><source src="RZAMCorrectionAndAP/.wav" type="audio/wav">Audio element not supported</audio></td>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 210px; height: 20px"><source src="RZAMCorrectionAndAP/bdl_02WORLD.wav" type="audio/wav">Audio element not supported</audio></td>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 210px; height: 20px"><source src="RZAMCorrectionAndAP/bdl_02BeforeCorrectionFilter.wav" type="audio/wav">Audio element not supported</audio></td>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 210px; height: 20px"><source src="RZAMCorrectionAndAP/bdl_02RZsynth_AfterComp.wav" type="audio/wav">Audio element not supported</audio></td>
+</tr>
+<tr>
+    <th align="middle"> arctic_a003.wav </th>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 210px; height: 20px"><source src="RZAMCorrectionAndAP/bdl_03.wav" type="audio/wav">Audio element not supported</audio></td>
+    <!--<td align="middle"><table class="invisible">-->
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 210px; height: 20px"><source src="RZAMCorrectionAndAP/.wav" type="audio/wav">Audio element not supported</audio></td>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 210px; height: 20px"><source src="RZAMCorrectionAndAP/bdl_03WORLD.wav" type="audio/wav">Audio element not supported</audio></td>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 210px; height: 20px"><source src="RZAMCorrectionAndAP/bdl_03BeforeCorrectionFilter.wav" type="audio/wav">Audio element not supported</audio></td>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 210px; height: 20px"><source src="RZAMCorrectionAndAP/bdl_03RZsynth_AfterComp.wav" type="audio/wav">Audio element not supported</audio></td>
+</tr>
+<tr>
+    <th align="middle"> arctic_a004.wav </th>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 210px; height: 20px"><source src="RZAMCorrectionAndAP/bdl_04.wav" type="audio/wav">Audio element not supported</audio></td>
+    <!--<td align="middle"><table class="invisible">-->
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 210px; height: 20px"><source src="RZAMCorrectionAndAP/.wav" type="audio/wav">Audio element not supported</audio></td>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 210px; height: 20px"><source src="RZAMCorrectionAndAP/bdl_04WORLD.wav" type="audio/wav">Audio element not supported</audio></td>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 210px; height: 20px"><source src="RZAMCorrectionAndAP/bdl_04BeforeCorrectionFilter.wav" type="audio/wav">Audio element not supported</audio></td>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 210px; height: 20px"><source src="RZAMCorrectionAndAP/bdl_04RZsynth_AfterComp.wav" type="audio/wav">Audio element not supported</audio></td>
+</tr>
+</table>
+<!-- SLT results -->
+    <br/>SLT<table class="demotable">
+<tr><td> </td><th>Original</th><th>STRAIGHT</th><th>WORLD</th><th>RZ (Before AM correction)</th><th>RZ (After AM correction)</th></tr>
+
+<tr>
+    <th align="middle"> arctic_a001.wav </th>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 210px; height: 20px"><source src="RZAMCorrectionAndAP/slt_01.wav" type="audio/wav">Audio element not supported</audio></td>
+    <!--<td align="middle"><table class="invisible">-->
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 210px; height: 20px"><source src="RZAMCorrectionAndAP/.wav" type="audio/wav">Audio element not supported</audio></td>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 210px; height: 20px"><source src="RZAMCorrectionAndAP/slt_01WORLD.wav" type="audio/wav">Audio element not supported</audio></td>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 210px; height: 20px"><source src="RZAMCorrectionAndAP/slt_01BeforeCorrectionFilter.wav" type="audio/wav">Audio element not supported</audio></td>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 210px; height: 20px"><source src="RZAMCorrectionAndAP/slt_01RZsynth_AfterComp.wav" type="audio/wav">Audio element not supported</audio></td>
+</tr>
+<tr>
+    <th align="middle"> arctic_a002.wav </th>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 210px; height: 20px"><source src="RZAMCorrectionAndAP/slt_02.wav" type="audio/wav">Audio element not supported</audio></td>
+    <!--<td align="middle"><table class="invisible">-->
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 210px; height: 20px"><source src="RZAMCorrectionAndAP/.wav" type="audio/wav">Audio element not supported</audio></td>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 210px; height: 20px"><source src="RZAMCorrectionAndAP/slt_02WORLD.wav" type="audio/wav">Audio element not supported</audio></td>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 210px; height: 20px"><source src="RZAMCorrectionAndAP/slt_02BeforeCorrectionFilter.wav" type="audio/wav">Audio element not supported</audio></td>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 210px; height: 20px"><source src="RZAMCorrectionAndAP/slt_02RZsynth_AfterComp.wav" type="audio/wav">Audio element not supported</audio></td>
+</tr>
+<tr>
+    <th align="middle"> arctic_a003.wav </th>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 210px; height: 20px"><source src="RZAMCorrectionAndAP/slt_03.wav" type="audio/wav">Audio element not supported</audio></td>
+    <!--<td align="middle"><table class="invisible">-->
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 210px; height: 20px"><source src="RZAMCorrectionAndAP/.wav" type="audio/wav">Audio element not supported</audio></td>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 210px; height: 20px"><source src="RZAMCorrectionAndAP/slt_03WORLD.wav" type="audio/wav">Audio element not supported</audio></td>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 210px; height: 20px"><source src="RZAMCorrectionAndAP/slt_03BeforeCorrectionFilter.wav" type="audio/wav">Audio element not supported</audio></td>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 210px; height: 20px"><source src="RZAMCorrectionAndAP/slt_03RZsynth_AfterComp.wav" type="audio/wav">Audio element not supported</audio></td>
+</tr>
+<tr>
+    <th align="middle"> arctic_a004.wav </th>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 210px; height: 20px"><source src="RZAMCorrectionAndAP/slt_04.wav" type="audio/wav">Audio element not supported</audio></td>
+    <!--<td align="middle"><table class="invisible">-->
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 210px; height: 20px"><source src="RZAMCorrectionAndAP/.wav" type="audio/wav">Audio element not supported</audio></td>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 210px; height: 20px"><source src="RZAMCorrectionAndAP/slt_04WORLD.wav" type="audio/wav">Audio element not supported</audio></td>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 210px; height: 20px"><source src="RZAMCorrectionAndAP/slt_04BeforeCorrectionFilter.wav" type="audio/wav">Audio element not supported</audio></td>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 210px; height: 20px"><source src="RZAMCorrectionAndAP/slt_04RZsynth_AfterComp.wav" type="audio/wav">Audio element not supported</audio></td>
+</tr>
+</table>
+        </body>
+    </html>
     
-    
-    </table>
-      </body>
-      </html>
