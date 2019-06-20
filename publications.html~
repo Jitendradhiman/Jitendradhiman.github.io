@@ -28,10 +28,11 @@
 <td align="center" valign="bottom">
 <h4>
 | <a href="./index.html">Home</a> |
-<a href="./research_interests.html">Research Interests</a> |
-<a href="./coursework.html">Coursework</a> | 
-<a href="./publications.html">Publications</a> | 
-<a href="./others.html">Others</a> |
+<a href="./research_interests.html">Research</a> |
+<!--<a href="./coursework.html">Coursework</a> |--> 
+<a href="./publications.html">Publications</a> |
+<a href="./CV.pdf">CV</a> |
+<a href="./talks.html">Presentations</a> |
 <a href="./contactme.html">Contact me</a> |
 <a href="./Resources.html">Resources</a> |
 </h4>
@@ -47,13 +48,15 @@
 <div id="left">
 <h2>Publications</h2>
 <ul>
-<li><p><b>J. Dhiman</b> and C.S. Seelamantula, <a style="text-decoration:none" href="https://sites.google.com/site/chandrasekharseelamantula/publications/conference-articles"><font color="Black"> "A spectro-temporal technique for estimating aperiodicity and voiced/unvoiced decision boundaries of speech signals</font></a>", Proceedings of IEEE International Conference on Acoustic, Speech, and Signal Processing (ICASSP), May 12-17, 2019.</p></li>
+<li><p><b>J. Dhiman</b> and C.S. Seelamantula, <a style="text-decoration:none" href="https://sites.google.com/site/chandrasekharseelamantula/publications/conference-articles"><font color="Black"> "A spectro-temporal technique for estimating aperiodicity and voiced/unvoiced decision boundaries of speech signals</font></a>", in Proc. of IEEE International Conference on Acoustic, Speech, and Signal Processing (ICASSP) 2019, May 12-17, United Kingdom, Brighton.</p></li>
 
-<li><p><b>J. Dhiman</b>, N. Sharma, and C.S. Seelamantula "<a style="text-decoration:none" href="https://sites.google.com/site/chandrasekharseelamantula/publications/conference-articles"><font color="Black">Multicomponent 2-D AM-FM modeling of speech spectrograms</font></a>", Proceedings of Interspeech 2018, September 2-6, India, Hyderabad. </p></li>
+<li><p><b>J. Dhiman</b>, N. Sharma, and C.S. Seelamantula "<a style="text-decoration:none" href="https://sites.google.com/site/chandrasekharseelamantula/publications/conference-articles"><font color="Black">Multicomponent 2-D AM-FM modeling of speech spectrograms</font></a>", on Proc. of Interspeech 2018, September 2-6, India, Hyderabad. </p></li>
 
-<li><p><b>J. Dhiman</b>, N. Adiga, and C.S. Seelamantula "<a style="text-decoration:none" href="https://sites.google.com/site/chandrasekharseelamantula/publications/conference-articles"><font color="Black">A Spectro-temporal demodulation technique for pitch estimation</font></a>", Proceedings of Interspeech 2017, August 20-24, 2017, Stockholm, Sweden.</p></li>
+<li><p><b>J. Dhiman</b>, N. Adiga, and C.S. Seelamantula "<a style="text-decoration:none" href="https://sites.google.com/site/chandrasekharseelamantula/publications/conference-articles"><font color="Black">A spectro-temporal demodulation technique for pitch estimation</font></a>", in Proc. of Interspeech 2017, August 20-24, Stockholm, Sweden.</p></li>
 
-<li><p>K. Vijayan<b>, J. Dhiman</b>, and C.S. Seelamantula "<a style="text-decoration:none" href="https://sites.google.com/site/chandrasekharseelamantula/publications/conference-articles"><font color="Black">Time-frequency coherence for periodic-aperiodic decomposition of speech signals</font></a>", Proceedings of Interspeech 2017, August 20-24, 2017, Stockholm, Sweden.</p></li>
+<li><p>K. Vijayan<b>, J. Dhiman</b>, and C.S. Seelamantula "<a style="text-decoration:none" href="https://sites.google.com/site/chandrasekharseelamantula/publications/conference-articles"><font color="Black">Time-frequency coherence for periodic-aperiodic decomposition of speech signals</font></a>", in Proc. of Interspeech 2017, August 20-24, Stockholm, Sweden.</p></li>
+<li><p>Senthil Kumar Mani<b>, J. Dhiman</b>, and C.S. Seelamantula "<a style="text-decoration:none" href="http://raiith.iith.ac.in/1102/"><font color="Black">A
+Novel Speech Duration Modifier for Packet Based Communication System</font></a>", in Proc. of Interspeech 2014, September 14-18, Singapore.</p></li>
 
 </ul>
 </div>

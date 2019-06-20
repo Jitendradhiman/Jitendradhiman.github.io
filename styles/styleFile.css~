@@ -66,8 +66,6 @@ small.bold {
 
         color:#004000;
         color:#000000;
-  color: #808080;
-
         font-weight:normal;
         font-family:  Helvetica, Arial, serif;
         font-style:italic;
@@ -113,7 +111,9 @@ a:hover.small {
 	font-family:   Helvetica, Arial, sans-serif;
 	font-size:.9em;
 }
-
+#main img {
+border:#777777 2px solid;
+}
 
 #main #left table {
 border-collapse: collapse;
