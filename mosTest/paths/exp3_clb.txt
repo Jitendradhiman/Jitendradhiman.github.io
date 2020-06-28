@@ -1,0 +1,4 @@
+./mosRZAP/female/clb/exp3/arctic_a0003.wav
+./mosRZAP/female/clb/exp3/arctic_a0003_STRAIGHTsynth.wav
+./mosRZAP/female/clb/exp3/arctic_a0003_WORLDsynth.wav
+./mosRZAP/female/clb/exp3/clb_arctic_a0003RZAPWORLDAM.wav

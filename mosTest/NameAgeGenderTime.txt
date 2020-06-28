@@ -1,0 +1,8 @@
+exp1 : -3 -3 0 1
+3 4 6 8
+3 4 5 7
+
+./mosRZAP/male/bdl/exp1/arctic_a0011.wav 2
+./mosRZAP/male/bdl/exp1/arctic_a0011_STRAIGHTsynth.wav 6
+./mosRZAP/male/bdl/exp1/arctic_a0011_WORLDsynth.wav
+./mosRZAP/male/bdl/exp1/bdl_arctic_a0011RZAPWORLDAM.wav

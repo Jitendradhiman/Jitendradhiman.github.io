@@ -1,0 +1,21 @@
+{
+	"bdlexp1":{
+			  "A1": "./mosRZAP/male/bdl/exp1/arctic_a0011.wav",
+			  "A2": "./mosRZAP/male/bdl/exp2/arctic_a0012_STRAIGHTsynth.wav",
+			  "A3": "./mosRZAP/male/bdl/exp3/arctic_a0013_WORLDsynth.wav",
+			  "A4": "./mosRZAP/female/slt/exp4/slt_arctic_a0009RZAPWORLDAM.wav"
+      		  },
+	"bdlexp2":{
+			  "A1": "./mosRZAP/male/bdl/exp2/arctic_a0012.wav",
+			  "A2": "./mosRZAP/male/bdl/exp2/arctic_a0012_STRAIGHTsynth.wav",
+			  "A3": "./mosRZAP/male/bdl/exp2/arctic_a0012_WORLDsynth.wav",
+			  "A4": "./mosRZAP/male/bdl/exp2/bdl_arctic_a0012RZAPWORLDAM.wav"
+      		  },
+  	"bdlexp3":{
+			  "A1": "./mosRZAP/male/bdl/exp3/arctic_a0013.wav",
+			  "A2": "./mosRZAP/male/bdl/exp3/arctic_a0013_STRAIGHTsynth.wav",
+			  "A3": "./mosRZAP/male/bdl/exp3/arctic_a0013_WORLDsynth.wav",
+			  "A4": "./mosRZAP/male/bdl/exp3/bdl_arctic_a0013RZAPWORLDAM.wav"
+      		  }
+      		  
+}
