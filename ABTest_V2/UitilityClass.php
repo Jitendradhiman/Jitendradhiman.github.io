@@ -67,11 +67,14 @@
 			$file     = $this->read_file();
 			$allkeys  = array_keys($file);
 			$lines    = COUNT($file[$allkeys[$index]]); // Count No of Paths
-			$audioPath= $file[$allkeys[$index]]; 		 // Audio Paths
-			$audioPathKey = array_keys($audioPath); // the keys to methods in one set of the test
 
+			$test= $file[$allkeys[$index]]; 		 // Audio Paths
+			$testkeys = array_keys($test); // the keys to methods in one set of the test
 			foreach ($shuffle_sequence as $key) {
-				$my_shuffle_array[$audioPathKey[$key]] = $audioPath[$audioPathKey[$key]]; // get the methods randomly shuffled in one test-set
+				$testPairTemp = $test[$testkeys[$key]];
+				foreach ($testPairTemp as $key => $value) {
+					$my_shuffle_array[$key] = $testPairTemp[$key]; // get the methods randomly shuffled in one test-set
+				}
 			}
 			return $my_shuffle_array;
 		}
@@ -84,7 +87,7 @@
 		/*================= Create A Result File CVC ==============*/
 		function write_file($data,$userdata,$testcount,$totalNumberOfTests)
 		{
-			//$audio    = $userdata['audio'];
+			//echo $testcount;
 			$gender   = $userdata['gender'];
 			$fullName = $userdata['name'].$userdata['age'].$gender[0];
 			$path     = "./Results/".$fullName;	

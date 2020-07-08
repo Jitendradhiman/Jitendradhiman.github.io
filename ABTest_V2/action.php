@@ -2,15 +2,15 @@
 /////////////////////////////////
 /////////////////////////////////
 session_start();
-// Redirect For Valid User back to log-in page, prevents visiting this page without login
+  // Redirect For Valid User back to log-in page, prevents visiting this page without login
 if(!isset($_SESSION['userdata']))
 {
         header('location: index.php');
         exit();
 }
-////////////////////////////
-$index = 0; // getting Shuffled Array, just for the first run
-$msg1  =  NULL; // holds a message for the user to resume the test 
+  ////////////////////////////
+$index = 0;    // getting Shuffled Array, just for the first run
+$msg1 =  NULL; // holds a message for the user to resume the test 
 // creating object
 include('UitilityClass.php');
 $ObjUitilityClass =  new UitilityClass();
@@ -57,11 +57,13 @@ if(isset($_SESSION['userdata']) && !isset($_POST['submit']))
     
     ///////// display Errors /////////////
     $Error_msg =  $ObjUitilityClass->Errors_check(array_keys($_SESSION['my_shuffle_array']),array_keys($_POST));
+
     //////////////////////////////////////
     $Success_msg = NULL; 
     //// retain current state of shuffled array in UI as long as errors exist, required for UI because we don't want key shuffle again
     $my_shuffle_array = $_SESSION['my_shuffle_array'];
     $shuffle_seq      = $_SESSION['$shuffle_seq'];
+    
      /*==== execute only when a sub-test is over and save the scores =====*/
     if(empty($Error_msg))
     {
@@ -83,7 +85,7 @@ if(isset($_SESSION['userdata']) && !isset($_POST['submit']))
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>MOS test</title>
+<title>AB test</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
@@ -145,74 +147,112 @@ Gender : <strong>'.$gender.'</strong>';
 <?php  
 $test = (!isset($_SESSION['index'])) ? $index : $_SESSION['index'];
 if (isset($Success_msg))
-//$_SESSION['my_shuffle_array'] = $my_shuffle_array = $ObjUitilityClass->random_array($test);
-$_SESSION['$shuffle_seq']     = $shuffle_seq      = $ObjUitilityClass->test_shuffle_sequence($test);
-$_SESSION['my_shuffle_array'] = $my_shuffle_array = $ObjUitilityClass->test_shuffle($test,$shuffle_seq);
-// loop to display the wavefiles
-$i = 1; // displays the panel number   
-  //var_dump($my_shuffle_array);
-foreach ($my_shuffle_array as $key => $value)
 {
+  //$_SESSION['my_shuffle_array'] = $my_shuffle_array = $ObjUitilityClass->random_array($test);
+  $_SESSION['$shuffle_seq']     = $shuffle_seq      = $ObjUitilityClass->test_shuffle_sequence($test);
+  $_SESSION['my_shuffle_array'] = $my_shuffle_array = $ObjUitilityClass->test_shuffle($test,$shuffle_seq);
+}
+// loop to display the wavefiles
+$i = 1; // displays the panel number
+//var_dump($my_shuffle_array);   
+$k1 =0; // for the function call while playing the file, gives different names to the functions, cobined with $key
+$k2 =1; // for the function call while playing the file, gives different names to the functions, cobined with $key
+foreach ($my_shuffle_array as $key => $value)
+    {
+      $value1 = $my_shuffle_array[$key][0];
+      $value2 = $my_shuffle_array[$key][1];
 ?>
 <!--  -->
-    <tr>       
-      <th class="align-middle" scope="row">
-        <!-- <i class="fa fa-arrow-right" style="color: orange;"></i> -->
-         <span class="badge badge-danger"><?php echo $i;$i=$i+1; ?></span>
-      </th>
-      <td class="align-middle">
-  <audio id="myAudio<?php echo $key; ?>">
-    <source src="<?php echo $value;?>" type="audio/mpeg">
+      <tr>
+        
+        <th class="align-middle" scope="row">
+          <!-- <i class="fa fa-arrow-right" style="color: orange;"></i> -->
+           <span class="badge badge-danger"><?php echo $i;$i=$i+1; ?></span>
+        </th>
+
+        <td class="align-middle">
+  <!-- button A-->
+  <audio id="myAudio<?php echo $key.$k1; ?>">
+  <source src="<?php echo $value1;?>" type="audio/mpeg">
     Your browser does not support the audio element.
   </audio>
-  <button onclick="playAudio<?php echo $key; ?>()" id="playbtn<?php echo $key; ?>" type="button" class="btn btn-outline-secondary">Play Audio</button>
-  <!-- implements the beahaviour of the play buttons -->
-  <script>
-  function playAudio<?php echo $key; ?>() // for every button the function name is different given by  $key
-  { 
-    var x = document.getElementById("myAudio<?php echo $key; ?>");
-    x.play();
-    var y1; // controls cheating: user can not give score without listening to the wavefile
-    x.onplaying = function() {
-    y1 = null;
-    document.getElementById("myAudio<?php echo $key;?>").value = y1; 
-    var elems = document.getElementsByClassName("btn btn-outline-secondary"); // disable the play buttons while playing
-    for(var i = 0; i < elems.length; i++) {
-      elems[i].disabled = true;
-    }
+<button onclick="playAudio<?php echo $key.$k1; ?>()" type="button" id="hello" class="btn btn-outline-secondary">A</button>
+<!-- button A -->
+<script>
+function playAudio<?php echo $key.$k1; ?>()
+{ 
+  var x = document.getElementById("myAudio<?php echo $key.$k1; ?>"); 
+  x.play();
+  var y1; // controls cheating: user can not give score without listening to the wavefile
+  x.onplaying = function() { // onplaying disable all the play buttons
+  y1 = null;
+  document.getElementById("myAudio<?php echo $key.$k1;?>").value = y1;
+  var elems = document.getElementsByClassName("btn btn-outline-secondary");
+  for(var i = 0; i < elems.length; i++) {
+    elems[i].disabled = true;
+   }
+  }  
+  x.onpause = function() {  // onplaying enable all the play buttons
+  y1 = 1;
+  document.getElementById("myAudio<?php echo $key.$k1;?>").value = y1;
+  var elems = document.getElementsByClassName("btn btn-outline-secondary");
+  for(var i = 0; i < elems.length; i++) {
+      elems[i].disabled = false;
+   }
   }
-      x.onpause = function() { 
-      y1 = 1;
-      document.getElementById("myAudio<?php echo $key;?>").value = y1; 
-      var elems = document.getElementsByClassName("btn btn-outline-secondary");
-      for(var i = 0; i < elems.length; i++) {
-          elems[i].disabled = false;
-      }
-    }
-  } 
-  // well this function is not required any more, since I have implemented enable/disable play buttons
-  // function pauseAudio<?php echo $key; ?>() { 
-  //   var x = document.getElementById("myAudio<?php echo $key; ?>");  
-  //   x.pause();
-  //   y1 = null;
-  //   document.getElementById("myAudio<?php echo $key;?>").value = y1; 
-  //   document.getElementById("playbtn<?php echo $key; ?>").setAttribute('onclick','playAudio<?php echo $key; ?>()');
-  // } 
-  </script>
+}
+</script>
+  <!-- button B -->
+  <audio id="myAudio<?php echo $key.$k2; ?>">
+  <source src="<?php echo $value2;?>" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+<button onclick="playAudio<?php echo $key.$k2; ?>()" type="button" class="btn btn-outline-secondary">B</button>
+<script>
+// button B  
+function playAudio<?php echo $key.$k2; ?>()
+{ 
+  var x = document.getElementById("myAudio<?php echo $key.$k2; ?>"); 
+  x.play();
+  y2 = 1;
+  x.onplaying = function(){
+  y2 = null;
+  document.getElementById("myAudio<?php echo $key.$k2;?>").value = y2;
+  var elems = document.getElementsByClassName("btn btn-outline-secondary");
+  for(var i = 0; i < elems.length; i++) {
+    elems[i].disabled = true;
+   }
+  }  
+  x.onpause = function() { 
+  y2 = 1;
+  document.getElementById("myAudio<?php echo $key.$k2;?>").value = y2;
+  var elems = document.getElementsByClassName("btn btn-outline-secondary");
+  for(var i = 0; i < elems.length; i++) {
+      elems[i].disabled = false;
+   }
+  }
+}
+</script>
+<br>
+<!-- click count:<input type="number" name="" id="demo<?php echo $key;?>" value="0" style="width: 50px;"> -->
       </td>
-        <td class="align-middle">
-          <!-- desplay radio button -->
-          <?php
-          $h=1;// gives different function names when a radio button is selected 
-          for ($x=1; $x<=5; $x++) // create radio buttons against play button dynamically
-            { ?> <!-- change here to create a different scale-->
 
+        <td class="align-middle">
+          <!-- desplay radip button -->
+
+          <?php
+$h = 1; // gives different function names when a radio button is selected
+           for ($x=-3; $x<=3; $x++)
+{ 
+//echo "<strong>".$h.$key."</strong>";
+            ?> <!-- change here to create a different scale-->
     <!-- ///////////////////////////////////////////////// -->
     <div class="form-check-inline">
     <label class="container">
                 <?php
                 // retain already given/checked scores if errors
-                $check = NULL;             
+                $check = NULL;  
+                          
                   if(!empty($Error_msg)) // switch to unchecked radio when a new test comes and all the files have been scored in previous sub-test
                   { 
                     if(array_key_exists($key, $_POST))
@@ -228,26 +268,35 @@ foreach ($my_shuffle_array as $key => $value)
                     }
                   }
                   ?>
-  <input <?Php echo $check; ?> id="radiocheck<?php echo $h.$key; ?>" onclick="checkis<?php echo $h.$key; ?>()"class="form-check-input" value="<?php echo $x; ?>" type="radio"  name="<?php echo $key;?>">
-   <script type="text/javascript">
+ 
+  <input <?Php echo $check; ?> id="radiocheck<?php echo $h.$key; ?>" onclick="checkis<?php echo $h.$key; ?>()" class="form-check-input" value="<?php echo $x; ?>" type="radio" name="<?php echo $key;?>">
+
+  <script type="text/javascript">
+
 // this function takes care of the case when user wants to cheet by giving scores without listening to the wavefiles (TODO: if a panel is missed, an error occurs, if the user wants to change the scores of previously heared wavefiles, he/she can not do it unless user listen to the wavefiles once again, since the values of variables z1 and z2 are destroyed when the page reloads)
   function checkis<?php echo $h.$key; ?>()
     {
-      var z1 = document.getElementById("myAudio<?php echo $key;?>").value;
-      if (z1!=null){
+      //var y = document.getElementById("demo<?php echo $key;?>").value;
+      var z1 = document.getElementById("myAudio<?php echo $key.$k1;?>").value;
+      var z2 = document.getElementById("myAudio<?php echo $key.$k2;?>").value;
+      //alert("check is <?php echo $h.$key; ?>");
+      if (z1!=null && z2!=null){
+        //alert("Both wavefiles played");
         document.getElementById("radiocheck<?php echo $h.$key; ?>").checked = true;
       }
       else {
-            alert("Listen to a wavefile carefully till its end, then give your score.");
+            alert("Listen to both the wavefiles, then give your score.");
             document.getElementById("radiocheck<?php echo $h.$key; ?>").checked = false;
       }
     }
   </script>
+
   <span class="checkmark"></span> <!--for the look of radio button-->
+
     </label><?php echo $x; ?>
     </div>
     <!-- ///////////////////////////////////////////////// -->
-                  <?php $h++;} ?>
+                  <?php $h++; } ?>
     <!-- stop display radio button -->
           </td>
         </tr>
@@ -267,6 +316,7 @@ foreach ($my_shuffle_array as $key => $value)
   <input class=" btn btn-outline-success " type="submit" name="submit" value="Submit">
   <!-- stop submit button -->
   </div>
+
 </form>
 <!-- *************************************************************************** -->
 </div>
@@ -282,25 +332,24 @@ foreach ($my_shuffle_array as $key => $value)
     Rating scale:
   </p>
   <p style="text-align: left">
-  <b>1: Bad:</b> Very annoying artifacts and/or very bad resynthesis quality<br>
-  <b>2: Poor:</b> Annoying artifacts and/or bad resynthesis quality<br>
-  <b>3: Fair:</b> Some artifacts and/or good synthesis quality<br>
-  <b>4: Good:</b> Very few artifacts and/or very good resynthesis quality<br>
-  <b>5: Excellent:</b> No artifacts, almost close to a natural speech<br>
+    <u><p>B with respect to A</p></u>
+  <b>-3: much worse:</b> <br>
+  <b>-2: worse:</b><br>
+  <b>-1: slightly worse:</b><br>
+  <b>0: about the same:</b><br>
+  <b>1: slightly better:</b> <br>
+  <b>2: better:</b> <br>
+  <b>3: much better:</b><br>
 </p>
   <ul>
-      <li>On your left, each pannel has a wavefile which you will listen by clicking on the button.</li>
-      <li>The goal is to evaluate the perceptual sound quality of various speech recordings.</li>
-      <li>Preferably use high quality hedphones for this test.</li>
-      <li>You will listen to the speech recordings along with the benchmark recording which is hidden and
-      appear in random order.</li>
-      <li>You will rate the perceptual sound quality taking into account any artifacts and the overall quality.</li>
-     <li>The wavefiles on each pannel are presented in random order in each trial. For example, a wavefile at pannel-1 need not correspond to the same throught.</li>
-    <li> Listen to a wavefile patiently till its end.</li>
+    <li>On your left, each pannel has a pair of wavefiles that are processed by different algorithms.</li>
+    <li>Compare B with respect to A while paying attention to specific types of distortions which can occur at certain time instants.</li>
+    <li>The order in which the speech files are played is random. For example, the waveform pair on panel-1 does not necessarily correspond to the same pair throughout. Even within a pair the wavefiles appear in random order.</li>
+    <li>Listen to the speech signals patiently and until the end of file.</li>
+    <li>It is recommended to take 5 minutes rest after every 20 minutes.</li>
     <li>You may repeatedly listen to a speech file.</li>
-    <li> The test resumes automatically if interrupted, you need to supply the same login details. Please make a note of your login details.</li>
+    <li>If the test is interrupted or you logout before completion, you can login again with the same login details, and the test resumes automatically.</li>
   </ul>
-
   <hr>
   <p class="mb-0">For any query, email me at jkdiith@gmail.com</p>
 </div>

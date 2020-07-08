@@ -26,12 +26,14 @@ if (isset($_POST['userdata']))
       {
         session_start();
         // creating object
-        //include('UitilityClass.php');
-        //$ObjUitilityClass =  new UitilityClass();
+        include('UitilityClass.php');
+        $ObjUitilityClass =  new UitilityClass();
+        
         // send mail when hosted on server then correct and test (uncomment for email)
        //$ObjUitilityClass->sendmail($email,$_POST);
+
         $_SESSION['userdata'] = $_POST;
-        header('location:action.php');
+        header('location: action.php'); 
         exit();
       }
 }
@@ -89,19 +91,10 @@ if (isset($_POST['userdata']))
                     <label class="form-check-label">
                       <input  required="" <?php if ((isset($gender)) && ($gender=='Male')) echo 'checked=""' ?> value="Male" class="form-check-input" type="radio" name="gender"> Male &nbsp;&nbsp;&nbsp;&nbsp;
                       <input  required="" <?php if ((isset($gender)) && ($gender=='Female')) echo 'checked=""' ?> class="form-check-input" type="radio" name="gender" value="Female"> Female
-                    </label> 
-                  <!-- tried asking what the user uses for listeing the wavefile, dropped   -->
-                  <!-- <br><br>
-                   Tell us what you will be using for the test: <br>
-                  <input  required="" <?php if ((isset($audio)) && ($audio=='E0')) echo 'checked = ""'?> type="radio" name="audio" value="E0"> Earphone
-                  <br>
-                  <input  required="" <?php if ((isset($audio)) && ($audio=='H1')) echo 'checked = ""'?> type="radio" name="audio" value="H1"> Headphone
-                  <br>
-                  <input  required="" <?php if ((isset($audio)) && ($audio=='H2')) echo 'checked = ""'?> class="form-check-input" type="radio" name="audio" value="H2"> A Sennheiser headphone (HD 650)
- -->
+                    </label>
                   </div>
-                <input class="btn btn-success " type="submit" name="userdata" value="Login">
-                </form>
+                   <input class="btn btn-success " type="submit" name="userdata" value="Login">
+                </form> 
 <!-- end  -->
   </div>
     <div class="col-sm-4" style="background-color:lavender;"></div>
