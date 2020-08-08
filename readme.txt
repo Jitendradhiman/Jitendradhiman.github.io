@@ -24,3 +24,16 @@ By default, this opens index.html file as a web page.
 =======
 By default, this opens index.html file as a web page.
 https://Jitendradhiman.github.io 
+
+---------------------------------------------------------------------------------------------------
+Making a local folder as a git repository, there are several git repositories linked with a single account and we are creating one more  fresh  repository with the name "listeningTest"
+go to the local folder (that need to be added as git repositories)
+-- Initialize as git repository
+$ git init
+-- add
+$ git add .
+-- commit
+ $ git commit -m "a new git repository"
+-- add the repository to remote
+$ git remote add origin URL of remote repository, for example : URL of remote repository = https://github.com/Jitendradhiman/listeningTests.git
+$ git push -u origin master 
