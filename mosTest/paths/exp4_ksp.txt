@@ -1,4 +1,0 @@
-./mosRZAP/male/ksp/exp4/arctic_a0019.wav
-./mosRZAP/male/ksp/exp4/arctic_a0019_STRAIGHTsynth.wav
-./mosRZAP/male/ksp/exp4/arctic_a0019_WORLDsynth.wav
-./mosRZAP/male/ksp/exp4/ksp_arctic_a0019RZAPWORLDAM.wav

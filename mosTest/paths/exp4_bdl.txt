@@ -1,4 +1,0 @@
-./mosRZAP/male/bdl/exp4/arctic_a0014.wav
-./mosRZAP/male/bdl/exp4/arctic_a0014_STRAIGHTsynth.wav
-./mosRZAP/male/bdl/exp4/arctic_a0014_WORLDsynth.wav
-./mosRZAP/male/bdl/exp4/bdl_arctic_a0014RZAPWORLDAM.wav
