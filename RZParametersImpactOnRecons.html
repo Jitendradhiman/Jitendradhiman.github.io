@@ -1,0 +1,611 @@
+
+
+    <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+        "http://www.w3.org/TR/html4/strict.dtd">
+    <html lang="en">
+        <head>
+            <meta http-equiv="content-type" content="text/html; charset=utf-8">
+            <title>Demonstration page for "Riesz Transform-based Speech Synthesis"</title>
+            <link href="demotable.css" rel="stylesheet" type="text/css">
+            <!--<script type="text/javascript" src="script.js"></script>-->
+        </head>
+        <body>
+        <div id="title">
+        Demonstration page for
+        <h3>Impact of Riesz parameters on speech reconstruction <br/> </h3>
+        Jitendra Kumar Dhiman and Chandra Sekhar Seelamantula
+        </div>
+        <br/>
+        <center>
+        Table: Each colomun constains the techniques used for analysis, the combination of parameters thus obtained is used for speech reconstruction</center>
+        <!-- Insert the main tabel here -->
+<table class="demotable">
+<thead>
+  <tr>
+    <th>Parameters</th>
+    <th>C1 (WORLD)</th>
+    <th>C2</th>
+    <th>C3</th>
+    <th>C4</th>
+    <th>C5</th>
+  </tr>
+  <colgroup>
+<col style="width: 128.5px">
+<col style="width: 119.5px">
+<col style="width: 145.5px">
+<col style="width: 131.5px">
+<col style="width: 136.5px">
+<col style="width: 118.5px">
+</colgroup>
+</thead>
+<tbody>
+  <tr>
+    <td>VUV</td>
+    <td>WORLD</td>
+    <td>CRT</td>
+    <td>CRT</td>
+    <td>CRT</td>
+    <td>CRT</td>
+  </tr>
+  <tr>
+    <td>AP</td>
+    <td>D4C</td>
+    <td>D4C</td>
+    <td>CRT</td>
+    <td>CRT</td>
+    <td>CRT</td>
+  </tr>
+  <tr>
+    <td>F0</td>
+    <td>Harvest</td>
+    <td>Harvest</td>
+    <td>Harvest</td>
+    <td>CRT</td>
+    <td>Harvest</td>
+  </tr>
+  <tr>
+    <td>VTE</td>
+    <td>Cheap Trick</td>
+    <td>Cheap Trick</td>
+    <td>Cheap Trick</td>
+    <td>Cheap Trick</td>
+    <td>CRT</td>
+  </tr>
+</tbody>
+</table>
+<br>
+<center>
+CRT: complex Riesz transform, VUV: voiced/unvoiced, AP: aperiodicity, VTE: vocal tract envelope
+</center>
+<br>
+<!-- main table ends here -->
+
+<!-- BDL results -->
+<br/>BDL<table class="demotable">
+<tr><td> </td><th>Original</th><th>STRAIGHT</th><th>C1 (WORLD)</th><th>C2</th><th>C3</th><th>C4</th><th>C5</th></tr>
+
+<tr>
+    <th align="middle"> arctic_a0100.wav </th>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 240px; height: 20px"><source src="./media/RZParamatersImpactOnRecons/bdl/arctic_a0100.wav" type="audio/wav">Audio element not supported</audio></td>
+    <!--<td align="middle"><table class="invisible">-->
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 240px; height: 20px"><source src="./media/RZParamatersImpactOnRecons/CMUsynthSTRAIGHT/bdl/arctic_a0100_STRAIGHTsynth.wav" type="audio/wav">Audio element not supported</audio></td>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 240px; height: 20px"><source src="./media/RZParamatersImpactOnRecons/CMUsynthWORLD/bdl/arctic_a0100_WORLDsynth.wav" type="audio/wav">Audio element not supported</audio></td>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 240px; height: 20px"><source src="./media/RZParamatersImpactOnRecons/CMURZsynthOnlyVUV/bdl/arctic_a0100_synthOnlyVUVCohClassifier.wav" type="audio/wav">Audio element not supported</audio></td>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 240px; height: 20px"><source src="./media/RZParamatersImpactOnRecons/CMURZsynthVUVAP/bdl/arctic_a0100_synthVUVRZAPCohClassifier.wav" type="audio/wav">Audio element not supported</audio></td>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 240px; height: 20px"><source src="./media/RZParamatersImpactOnRecons/CMURZsynthVUVExtendedAPF0CorrectedV2/bdl/arctic_a0100_synthVUVRZAPF0CohClassifier.wav" type="audio/wav">Audio element not supported</audio></td>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 240px; height: 20px"><source src="./media/RZParamatersImpactOnRecons/CMURZsynthRZVUVAPAMWORLDF0/bdl/arctic_a0100_synthRZVUVAPAMWORLDF0.wav" type="audio/wav">Audio element not supported</audio></td>
+</tr>
+
+<tr>
+    <th align="middle"> arctic_a0101.wav </th>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 240px; height: 20px"><source src="./media/RZParamatersImpactOnRecons/bdl/arctic_a0101.wav" type="audio/wav">Audio element not supported</audio></td>
+    <!--<td align="middle"><table class="invisible">-->
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 240px; height: 20px"><source src="./media/RZParamatersImpactOnRecons/CMUsynthSTRAIGHT/bdl/arctic_a0101_STRAIGHTsynth.wav" type="audio/wav">Audio element not supported</audio></td>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 240px; height: 20px"><source src="./media/RZParamatersImpactOnRecons/CMUsynthWORLD/bdl/arctic_a0101_WORLDsynth.wav" type="audio/wav">Audio element not supported</audio></td>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 240px; height: 20px"><source src="./media/RZParamatersImpactOnRecons/CMURZsynthOnlyVUV/bdl/arctic_a0101_synthOnlyVUVCohClassifier.wav" type="audio/wav">Audio element not supported</audio></td>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 240px; height: 20px"><source src="./media/RZParamatersImpactOnRecons/CMURZsynthVUVAP/bdl/arctic_a0101_synthVUVRZAPCohClassifier.wav" type="audio/wav">Audio element not supported</audio></td>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 240px; height: 20px"><source src="./media/RZParamatersImpactOnRecons/CMURZsynthVUVExtendedAPF0CorrectedV2/bdl/arctic_a0101_synthVUVRZAPF0CohClassifier.wav" type="audio/wav">Audio element not supported</audio></td>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 240px; height: 20px"><source src="./media/RZParamatersImpactOnRecons/CMURZsynthRZVUVAPAMWORLDF0/bdl/arctic_a0101_synthRZVUVAPAMWORLDF0.wav" type="audio/wav">Audio element not supported</audio></td>
+<tr>
+    <th align="middle"> arctic_a0102.wav </th>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 240px; height: 20px"><source src="./media/RZParamatersImpactOnRecons/bdl/arctic_a0102.wav" type="audio/wav">Audio element not supported</audio></td>
+    <!--<td align="middle"><table class="invisible">-->
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 240px; height: 20px"><source src="./media/RZParamatersImpactOnRecons/CMUsynthSTRAIGHT/bdl/arctic_a0102_STRAIGHTsynth.wav" type="audio/wav">Audio element not supported</audio></td>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 240px; height: 20px"><source src="./media/RZParamatersImpactOnRecons/CMUsynthWORLD/bdl/arctic_a0102_WORLDsynth.wav" type="audio/wav">Audio element not supported</audio></td>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 240px; height: 20px"><source src="./media/RZParamatersImpactOnRecons/CMURZsynthOnlyVUV/bdl/arctic_a0102_synthOnlyVUVCohClassifier.wav" type="audio/wav">Audio element not supported</audio></td>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 240px; height: 20px"><source src="./media/RZParamatersImpactOnRecons/CMURZsynthVUVAP/bdl/arctic_a0102_synthVUVRZAPCohClassifier.wav" type="audio/wav">Audio element not supported</audio></td>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 240px; height: 20px"><source src="./media/RZParamatersImpactOnRecons/CMURZsynthVUVExtendedAPF0CorrectedV2/bdl/arctic_a0102_synthVUVRZAPF0CohClassifier.wav" type="audio/wav">Audio element not supported</audio></td>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 240px; height: 20px"><source src="./media/RZParamatersImpactOnRecons/CMURZsynthRZVUVAPAMWORLDF0/bdl/arctic_a0102_synthRZVUVAPAMWORLDF0.wav" type="audio/wav">Audio element not supported</audio></td>
+</tr>
+
+<tr>
+    <th align="middle"> arctic_a0103.wav </th>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 240px; height: 20px"><source src="./media/RZParamatersImpactOnRecons/bdl/arctic_a0103.wav" type="audio/wav">Audio element not supported</audio></td>
+    <!--<td align="middle"><table class="invisible">-->
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 240px; height: 20px"><source src="./media/RZParamatersImpactOnRecons/CMUsynthSTRAIGHT/bdl/arctic_a0103_STRAIGHTsynth.wav" type="audio/wav">Audio element not supported</audio></td>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 240px; height: 20px"><source src="./media/RZParamatersImpactOnRecons/CMUsynthWORLD/bdl/arctic_a0103_WORLDsynth.wav" type="audio/wav">Audio element not supported</audio></td>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 240px; height: 20px"><source src="./media/RZParamatersImpactOnRecons/CMURZsynthOnlyVUV/bdl/arctic_a0103_synthOnlyVUVCohClassifier.wav" type="audio/wav">Audio element not supported</audio></td>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 240px; height: 20px"><source src="./media/RZParamatersImpactOnRecons/CMURZsynthVUVAP/bdl/arctic_a0103_synthVUVRZAPCohClassifier.wav" type="audio/wav">Audio element not supported</audio></td>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 240px; height: 20px"><source src="./media/RZParamatersImpactOnRecons/CMURZsynthVUVExtendedAPF0CorrectedV2/bdl/arctic_a0103_synthVUVRZAPF0CohClassifier.wav" type="audio/wav">Audio element not supported</audio></td>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 240px; height: 20px"><source src="./media/RZParamatersImpactOnRecons/CMURZsynthRZVUVAPAMWORLDF0/bdl/arctic_a0103_synthRZVUVAPAMWORLDF0.wav" type="audio/wav">Audio element not supported</audio></td>   
+</tr>
+<tr>
+    <th align="middle"> arctic_a0104.wav </th>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 240px; height: 20px"><source src="./media/RZParamatersImpactOnRecons/bdl/arctic_a0104.wav" type="audio/wav">Audio element not supported</audio></td>
+    <!--<td align="middle"><table class="invisible">-->
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 240px; height: 20px"><source src="./media/RZParamatersImpactOnRecons/CMUsynthSTRAIGHT/bdl/arctic_a0104_STRAIGHTsynth.wav" type="audio/wav">Audio element not supported</audio></td>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 240px; height: 20px"><source src="./media/RZParamatersImpactOnRecons/CMUsynthWORLD/bdl/arctic_a0104_WORLDsynth.wav" type="audio/wav">Audio element not supported</audio></td>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 240px; height: 20px"><source src="./media/RZParamatersImpactOnRecons/CMURZsynthOnlyVUV/bdl/arctic_a0104_synthOnlyVUVCohClassifier.wav" type="audio/wav">Audio element not supported</audio></td>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 240px; height: 20px"><source src="./media/RZParamatersImpactOnRecons/CMURZsynthVUVAP/bdl/arctic_a0104_synthVUVRZAPCohClassifier.wav" type="audio/wav">Audio element not supported</audio></td>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 240px; height: 20px"><source src="./media/RZParamatersImpactOnRecons/CMURZsynthVUVExtendedAPF0CorrectedV2/bdl/arctic_a0104_synthVUVRZAPF0CohClassifier.wav" type="audio/wav">Audio element not supported</audio></td>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 240px; height: 20px"><source src="./media/RZParamatersImpactOnRecons/CMURZsynthRZVUVAPAMWORLDF0/bdl/arctic_a0104_synthRZVUVAPAMWORLDF0.wav" type="audio/wav">Audio element not supported</audio></td>
+    </tr>
+</table>
+<!-- ksp results ---->
+    <br/>KSP<table class="demotable">
+<tr><td> </td><th>Original</th><th>STRAIGHT</th><th>C1 (WORLD)</th><th>C2</th><th>C3</th><th>C4</th><th>C5</th></tr>
+
+<tr>
+    <th align="middle"> arctic_a0100.wav </th>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 240px; height: 20px"><source src="./media/RZParamatersImpactOnRecons/ksp/arctic_a0100.wav" type="audio/wav">Audio element not supported</audio></td>
+    <!--<td align="middle"><table class="invisible">-->
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 240px; height: 20px"><source src="./media/RZParamatersImpactOnRecons/CMUsynthSTRAIGHT/ksp/arctic_a0100_STRAIGHTsynth.wav" type="audio/wav">Audio element not supported</audio></td>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 240px; height: 20px"><source src="./media/RZParamatersImpactOnRecons/CMUsynthWORLD/ksp/arctic_a0100_WORLDsynth.wav" type="audio/wav">Audio element not supported</audio></td>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 240px; height: 20px"><source src="./media/RZParamatersImpactOnRecons/CMURZsynthOnlyVUV/ksp/arctic_a0100_synthOnlyVUVCohClassifier.wav" type="audio/wav">Audio element not supported</audio></td>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 240px; height: 20px"><source src="./media/RZParamatersImpactOnRecons/CMURZsynthVUVAP/ksp/arctic_a0100_synthVUVRZAPCohClassifier.wav" type="audio/wav">Audio element not supported</audio></td>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 240px; height: 20px"><source src="./media/RZParamatersImpactOnRecons/CMURZsynthVUVExtendedAPF0CorrectedV2/ksp/arctic_a0100_synthVUVRZAPF0CohClassifier.wav" type="audio/wav">Audio element not supported</audio></td>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 240px; height: 20px"><source src="./media/RZParamatersImpactOnRecons/CMURZsynthRZVUVAPAMWORLDF0/ksp/arctic_a0100_synthRZVUVAPAMWORLDF0.wav" type="audio/wav">Audio element not supported</audio></td>
+</tr>
+
+<tr>
+    <th align="middle"> arctic_a0101.wav </th>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 240px; height: 20px"><source src="./media/RZParamatersImpactOnRecons/ksp/arctic_a0101.wav" type="audio/wav">Audio element not supported</audio></td>
+    <!--<td align="middle"><table class="invisible">-->
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 240px; height: 20px"><source src="./media/RZParamatersImpactOnRecons/CMUsynthSTRAIGHT/ksp/arctic_a0101_STRAIGHTsynth.wav" type="audio/wav">Audio element not supported</audio></td>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 240px; height: 20px"><source src="./media/RZParamatersImpactOnRecons/CMUsynthWORLD/ksp/arctic_a0101_WORLDsynth.wav" type="audio/wav">Audio element not supported</audio></td>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 240px; height: 20px"><source src="./media/RZParamatersImpactOnRecons/CMURZsynthOnlyVUV/ksp/arctic_a0101_synthOnlyVUVCohClassifier.wav" type="audio/wav">Audio element not supported</audio></td>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 240px; height: 20px"><source src="./media/RZParamatersImpactOnRecons/CMURZsynthVUVAP/ksp/arctic_a0101_synthVUVRZAPCohClassifier.wav" type="audio/wav">Audio element not supported</audio></td>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 240px; height: 20px"><source src="./media/RZParamatersImpactOnRecons/CMURZsynthVUVExtendedAPF0CorrectedV2/ksp/arctic_a0101_synthVUVRZAPF0CohClassifier.wav" type="audio/wav">Audio element not supported</audio></td>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 240px; height: 20px"><source src="./media/RZParamatersImpactOnRecons/CMURZsynthRZVUVAPAMWORLDF0/ksp/arctic_a0101_synthRZVUVAPAMWORLDF0.wav" type="audio/wav">Audio element not supported</audio></td>
+<tr>
+    <th align="middle"> arctic_a0102.wav </th>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 240px; height: 20px"><source src="./media/RZParamatersImpactOnRecons/ksp/arctic_a0102.wav" type="audio/wav">Audio element not supported</audio></td>
+    <!--<td align="middle"><table class="invisible">-->
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 240px; height: 20px"><source src="./media/RZParamatersImpactOnRecons/CMUsynthSTRAIGHT/ksp/arctic_a0102_STRAIGHTsynth.wav" type="audio/wav">Audio element not supported</audio></td>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 240px; height: 20px"><source src="./media/RZParamatersImpactOnRecons/CMUsynthWORLD/ksp/arctic_a0102_WORLDsynth.wav" type="audio/wav">Audio element not supported</audio></td>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 240px; height: 20px"><source src="./media/RZParamatersImpactOnRecons/CMURZsynthOnlyVUV/ksp/arctic_a0102_synthOnlyVUVCohClassifier.wav" type="audio/wav">Audio element not supported</audio></td>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 240px; height: 20px"><source src="./media/RZParamatersImpactOnRecons/CMURZsynthVUVAP/ksp/arctic_a0102_synthVUVRZAPCohClassifier.wav" type="audio/wav">Audio element not supported</audio></td>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 240px; height: 20px"><source src="./media/RZParamatersImpactOnRecons/CMURZsynthVUVExtendedAPF0CorrectedV2/ksp/arctic_a0102_synthVUVRZAPF0CohClassifier.wav" type="audio/wav">Audio element not supported</audio></td>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 240px; height: 20px"><source src="./media/RZParamatersImpactOnRecons/CMURZsynthRZVUVAPAMWORLDF0/ksp/arctic_a0102_synthRZVUVAPAMWORLDF0.wav" type="audio/wav">Audio element not supported</audio></td>
+</tr>
+
+<tr>
+    <th align="middle"> arctic_a0103.wav </th>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 240px; height: 20px"><source src="./media/RZParamatersImpactOnRecons/ksp/arctic_a0103.wav" type="audio/wav">Audio element not supported</audio></td>
+    <!--<td align="middle"><table class="invisible">-->
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 240px; height: 20px"><source src="./media/RZParamatersImpactOnRecons/CMUsynthSTRAIGHT/ksp/arctic_a0103_STRAIGHTsynth.wav" type="audio/wav">Audio element not supported</audio></td>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 240px; height: 20px"><source src="./media/RZParamatersImpactOnRecons/CMUsynthWORLD/ksp/arctic_a0103_WORLDsynth.wav" type="audio/wav">Audio element not supported</audio></td>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 240px; height: 20px"><source src="./media/RZParamatersImpactOnRecons/CMURZsynthOnlyVUV/ksp/arctic_a0103_synthOnlyVUVCohClassifier.wav" type="audio/wav">Audio element not supported</audio></td>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 240px; height: 20px"><source src="./media/RZParamatersImpactOnRecons/CMURZsynthVUVAP/ksp/arctic_a0103_synthVUVRZAPCohClassifier.wav" type="audio/wav">Audio element not supported</audio></td>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 240px; height: 20px"><source src="./media/RZParamatersImpactOnRecons/CMURZsynthVUVExtendedAPF0CorrectedV2/ksp/arctic_a0103_synthVUVRZAPF0CohClassifier.wav" type="audio/wav">Audio element not supported</audio></td>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 240px; height: 20px"><source src="./media/RZParamatersImpactOnRecons/CMURZsynthRZVUVAPAMWORLDF0/ksp/arctic_a0103_synthRZVUVAPAMWORLDF0.wav" type="audio/wav">Audio element not supported</audio></td>
+</tr>
+<tr>
+    <th align="middle"> arctic_a0104.wav </th>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 240px; height: 20px"><source src="./media/RZParamatersImpactOnRecons/ksp/arctic_a0104.wav" type="audio/wav">Audio element not supported</audio></td>
+    <!--<td align="middle"><table class="invisible">-->
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 240px; height: 20px"><source src="./media/RZParamatersImpactOnRecons/CMUsynthSTRAIGHT/ksp/arctic_a0104_STRAIGHTsynth.wav" type="audio/wav">Audio element not supported</audio></td>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 240px; height: 20px"><source src="./media/RZParamatersImpactOnRecons/CMUsynthWORLD/ksp/arctic_a0104_WORLDsynth.wav" type="audio/wav">Audio element not supported</audio></td>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 240px; height: 20px"><source src="./media/RZParamatersImpactOnRecons/CMURZsynthOnlyVUV/ksp/arctic_a0104_synthOnlyVUVCohClassifier.wav" type="audio/wav">Audio element not supported</audio></td>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 240px; height: 20px"><source src="./media/RZParamatersImpactOnRecons/CMURZsynthVUVAP/ksp/arctic_a0104_synthVUVRZAPCohClassifier.wav" type="audio/wav">Audio element not supported</audio></td>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 240px; height: 20px"><source src="./media/RZParamatersImpactOnRecons/CMURZsynthVUVExtendedAPF0CorrectedV2/ksp/arctic_a0104_synthVUVRZAPF0CohClassifier.wav" type="audio/wav">Audio element not supported</audio></td>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 240px; height: 20px"><source src="./media/RZParamatersImpactOnRecons/CMURZsynthRZVUVAPAMWORLDF0/ksp/arctic_a0104_synthRZVUVAPAMWORLDF0.wav" type="audio/wav">Audio element not supported</audio></td>
+</tr>
+</table>
+<!-- CLB results ---->
+<br/>CLB<table class="demotable">
+<tr><td> </td><th>Original</th><th>STRAIGHT</th><th>C1 (WORLD)</th><th>C2</th><th>C3</th><th>C4</th><th>C5</th></tr>
+
+<tr>
+    <th align="middle"> arctic_a0100.wav </th>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 240px; height: 20px"><source src="./media/RZParamatersImpactOnRecons/clb/arctic_a0100.wav" type="audio/wav">Audio element not supported</audio></td>
+    <!--<td align="middle"><table class="invisible">-->
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 240px; height: 20px"><source src="./media/RZParamatersImpactOnRecons/CMUsynthSTRAIGHT/clb/arctic_a0100_STRAIGHTsynth.wav" type="audio/wav">Audio element not supported</audio></td>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 240px; height: 20px"><source src="./media/RZParamatersImpactOnRecons/CMUsynthWORLD/clb/arctic_a0100_WORLDsynth.wav" type="audio/wav">Audio element not supported</audio></td>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 240px; height: 20px"><source src="./media/RZParamatersImpactOnRecons/CMURZsynthOnlyVUV/clb/arctic_a0100_synthOnlyVUVCohClassifier.wav" type="audio/wav">Audio element not supported</audio></td>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 240px; height: 20px"><source src="./media/RZParamatersImpactOnRecons/CMURZsynthVUVAP/clb/arctic_a0100_synthVUVRZAPCohClassifier.wav" type="audio/wav">Audio element not supported</audio></td>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 240px; height: 20px"><source src="./media/RZParamatersImpactOnRecons/CMURZsynthVUVExtendedAPF0CorrectedV2/clb/arctic_a0100_synthVUVRZAPF0CohClassifier.wav" type="audio/wav">Audio element not supported</audio></td>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 240px; height: 20px"><source src="./media/RZParamatersImpactOnRecons/CMURZsynthRZVUVAPAMWORLDF0/clb/arctic_a0100_synthRZVUVAPAMWORLDF0.wav" type="audio/wav">Audio element not supported</audio></td>
+</tr>
+
+<tr>
+    <th align="middle"> arctic_a0101.wav </th>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 240px; height: 20px"><source src="./media/RZParamatersImpactOnRecons/clb/arctic_a0101.wav" type="audio/wav">Audio element not supported</audio></td>
+    <!--<td align="middle"><table class="invisible">-->
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 240px; height: 20px"><source src="./media/RZParamatersImpactOnRecons/CMUsynthSTRAIGHT/clb/arctic_a0101_STRAIGHTsynth.wav" type="audio/wav">Audio element not supported</audio></td>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 240px; height: 20px"><source src="./media/RZParamatersImpactOnRecons/CMUsynthWORLD/clb/arctic_a0101_WORLDsynth.wav" type="audio/wav">Audio element not supported</audio></td>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 240px; height: 20px"><source src="./media/RZParamatersImpactOnRecons/CMURZsynthOnlyVUV/clb/arctic_a0101_synthOnlyVUVCohClassifier.wav" type="audio/wav">Audio element not supported</audio></td>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 240px; height: 20px"><source src="./media/RZParamatersImpactOnRecons/CMURZsynthVUVAP/clb/arctic_a0101_synthVUVRZAPCohClassifier.wav" type="audio/wav">Audio element not supported</audio></td>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 240px; height: 20px"><source src="./media/RZParamatersImpactOnRecons/CMURZsynthVUVExtendedAPF0CorrectedV2/clb/arctic_a0101_synthVUVRZAPF0CohClassifier.wav" type="audio/wav">Audio element not supported</audio></td>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 240px; height: 20px"><source src="./media/RZParamatersImpactOnRecons/CMURZsynthRZVUVAPAMWORLDF0/clb/arctic_a0101_synthRZVUVAPAMWORLDF0.wav" type="audio/wav">Audio element not supported</audio></td>
+<tr>
+    <th align="middle"> arctic_a0102.wav </th>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 240px; height: 20px"><source src="./media/RZParamatersImpactOnRecons/clb/arctic_a0102.wav" type="audio/wav">Audio element not supported</audio></td>
+    <!--<td align="middle"><table class="invisible">-->
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 240px; height: 20px"><source src="./media/RZParamatersImpactOnRecons/CMUsynthSTRAIGHT/clb/arctic_a0102_STRAIGHTsynth.wav" type="audio/wav">Audio element not supported</audio></td>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 240px; height: 20px"><source src="./media/RZParamatersImpactOnRecons/CMUsynthWORLD/clb/arctic_a0102_WORLDsynth.wav" type="audio/wav">Audio element not supported</audio></td>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 240px; height: 20px"><source src="./media/RZParamatersImpactOnRecons/CMURZsynthOnlyVUV/clb/arctic_a0102_synthOnlyVUVCohClassifier.wav" type="audio/wav">Audio element not supported</audio></td>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 240px; height: 20px"><source src="./media/RZParamatersImpactOnRecons/CMURZsynthVUVAP/clb/arctic_a0102_synthVUVRZAPCohClassifier.wav" type="audio/wav">Audio element not supported</audio></td>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 240px; height: 20px"><source src="./media/RZParamatersImpactOnRecons/CMURZsynthVUVExtendedAPF0CorrectedV2/clb/arctic_a0102_synthVUVRZAPF0CohClassifier.wav" type="audio/wav">Audio element not supported</audio></td>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 240px; height: 20px"><source src="./media/RZParamatersImpactOnRecons/CMURZsynthRZVUVAPAMWORLDF0/clb/arctic_a0102_synthRZVUVAPAMWORLDF0.wav" type="audio/wav">Audio element not supported</audio></td>
+</tr>
+
+<tr>
+    <th align="middle"> arctic_a0103.wav </th>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 240px; height: 20px"><source src="./media/RZParamatersImpactOnRecons/clb/arctic_a0103.wav" type="audio/wav">Audio element not supported</audio></td>
+    <!--<td align="middle"><table class="invisible">-->
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 240px; height: 20px"><source src="./media/RZParamatersImpactOnRecons/CMUsynthSTRAIGHT/clb/arctic_a0103_STRAIGHTsynth.wav" type="audio/wav">Audio element not supported</audio></td>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 240px; height: 20px"><source src="./media/RZParamatersImpactOnRecons/CMUsynthWORLD/clb/arctic_a0103_WORLDsynth.wav" type="audio/wav">Audio element not supported</audio></td>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 240px; height: 20px"><source src="./media/RZParamatersImpactOnRecons/CMURZsynthOnlyVUV/clb/arctic_a0103_synthOnlyVUVCohClassifier.wav" type="audio/wav">Audio element not supported</audio></td>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 240px; height: 20px"><source src="./media/RZParamatersImpactOnRecons/CMURZsynthVUVAP/clb/arctic_a0103_synthVUVRZAPCohClassifier.wav" type="audio/wav">Audio element not supported</audio></td>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 240px; height: 20px"><source src="./media/RZParamatersImpactOnRecons/CMURZsynthVUVExtendedAPF0CorrectedV2/clb/arctic_a0103_synthVUVRZAPF0CohClassifier.wav" type="audio/wav">Audio element not supported</audio></td>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 240px; height: 20px"><source src="./media/RZParamatersImpactOnRecons/CMURZsynthRZVUVAPAMWORLDF0/clb/arctic_a0103_synthRZVUVAPAMWORLDF0.wav" type="audio/wav">Audio element not supported</audio></td>
+</tr>
+<tr>
+    <th align="middle"> arctic_a0104.wav </th>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 240px; height: 20px"><source src="./media/RZParamatersImpactOnRecons/clb/arctic_a0104.wav" type="audio/wav">Audio element not supported</audio></td>
+    <!--<td align="middle"><table class="invisible">-->
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 240px; height: 20px"><source src="./media/RZParamatersImpactOnRecons/CMUsynthSTRAIGHT/clb/arctic_a0104_STRAIGHTsynth.wav" type="audio/wav">Audio element not supported</audio></td>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 240px; height: 20px"><source src="./media/RZParamatersImpactOnRecons/CMUsynthWORLD/clb/arctic_a0104_WORLDsynth.wav" type="audio/wav">Audio element not supported</audio></td>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 240px; height: 20px"><source src="./media/RZParamatersImpactOnRecons/CMURZsynthOnlyVUV/clb/arctic_a0104_synthOnlyVUVCohClassifier.wav" type="audio/wav">Audio element not supported</audio></td>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 240px; height: 20px"><source src="./media/RZParamatersImpactOnRecons/CMURZsynthVUVAP/clb/arctic_a0104_synthVUVRZAPCohClassifier.wav" type="audio/wav">Audio element not supported</audio></td>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 240px; height: 20px"><source src="./media/RZParamatersImpactOnRecons/CMURZsynthVUVExtendedAPF0CorrectedV2/clb/arctic_a0104_synthVUVRZAPF0CohClassifier.wav" type="audio/wav">Audio element not supported</audio></td>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 240px; height: 20px"><source src="./media/RZParamatersImpactOnRecons/CMURZsynthRZVUVAPAMWORLDF0/clb/arctic_a0104_synthRZVUVAPAMWORLDF0.wav" type="audio/wav">Audio element not supported</audio></td>
+</tr>
+</table>
+
+<!-- SLT results ---->
+<br/>SLT<table class="demotable">
+<tr><td> </td><th>Original</th><th>STRAIGHT</th><th>C1 (WORLD)</th><th>C2</th><th>C3</th><th>C4</th><th>C5</th></tr>
+
+<tr>
+    <th align="middle"> arctic_a0100.wav </th>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 240px; height: 20px"><source src="./media/RZParamatersImpactOnRecons/slt/arctic_a0100.wav" type="audio/wav">Audio element not supported</audio></td>
+    <!--<td align="middle"><table class="invisible">-->
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 240px; height: 20px"><source src="./media/RZParamatersImpactOnRecons/CMUsynthSTRAIGHT/slt/arctic_a0100_STRAIGHTsynth.wav" type="audio/wav">Audio element not supported</audio></td>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 240px; height: 20px"><source src="./media/RZParamatersImpactOnRecons/CMUsynthWORLD/slt/arctic_a0100_WORLDsynth.wav" type="audio/wav">Audio element not supported</audio></td>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 240px; height: 20px"><source src="./media/RZParamatersImpactOnRecons/CMURZsynthOnlyVUV/slt/arctic_a0100_synthOnlyVUVCohClassifier.wav" type="audio/wav">Audio element not supported</audio></td>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 240px; height: 20px"><source src="./media/RZParamatersImpactOnRecons/CMURZsynthVUVAP/slt/arctic_a0100_synthVUVRZAPCohClassifier.wav" type="audio/wav">Audio element not supported</audio></td>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 240px; height: 20px"><source src="./media/RZParamatersImpactOnRecons/CMURZsynthVUVExtendedAPF0CorrectedV2/slt/arctic_a0100_synthVUVRZAPF0CohClassifier.wav" type="audio/wav">Audio element not supported</audio></td>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 240px; height: 20px"><source src="./media/RZParamatersImpactOnRecons/CMURZsynthRZVUVAPAMWORLDF0/slt/arctic_a0100_synthRZVUVAPAMWORLDF0.wav" type="audio/wav">Audio element not supported</audio></td>
+</tr>
+
+<tr>
+    <th align="middle"> arctic_a0101.wav </th>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 240px; height: 20px"><source src="./media/RZParamatersImpactOnRecons/slt/arctic_a0101.wav" type="audio/wav">Audio element not supported</audio></td>
+    <!--<td align="middle"><table class="invisible">-->
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 240px; height: 20px"><source src="./media/RZParamatersImpactOnRecons/CMUsynthSTRAIGHT/slt/arctic_a0101_STRAIGHTsynth.wav" type="audio/wav">Audio element not supported</audio></td>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 240px; height: 20px"><source src="./media/RZParamatersImpactOnRecons/CMUsynthWORLD/slt/arctic_a0101_WORLDsynth.wav" type="audio/wav">Audio element not supported</audio></td>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 240px; height: 20px"><source src="./media/RZParamatersImpactOnRecons/CMURZsynthOnlyVUV/slt/arctic_a0101_synthOnlyVUVCohClassifier.wav" type="audio/wav">Audio element not supported</audio></td>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 240px; height: 20px"><source src="./media/RZParamatersImpactOnRecons/CMURZsynthVUVAP/slt/arctic_a0101_synthVUVRZAPCohClassifier.wav" type="audio/wav">Audio element not supported</audio></td>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 240px; height: 20px"><source src="./media/RZParamatersImpactOnRecons/CMURZsynthVUVExtendedAPF0CorrectedV2/slt/arctic_a0101_synthVUVRZAPF0CohClassifier.wav" type="audio/wav">Audio element not supported</audio></td>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 240px; height: 20px"><source src="./media/RZParamatersImpactOnRecons/CMURZsynthRZVUVAPAMWORLDF0/slt/arctic_a0101_synthRZVUVAPAMWORLDF0.wav" type="audio/wav">Audio element not supported</audio></td>
+<tr>
+    <th align="middle"> arctic_a0102.wav </th>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 240px; height: 20px"><source src="./media/RZParamatersImpactOnRecons/slt/arctic_a0102.wav" type="audio/wav">Audio element not supported</audio></td>
+    <!--<td align="middle"><table class="invisible">-->
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 240px; height: 20px"><source src="./media/RZParamatersImpactOnRecons/CMUsynthSTRAIGHT/slt/arctic_a0102_STRAIGHTsynth.wav" type="audio/wav">Audio element not supported</audio></td>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 240px; height: 20px"><source src="./media/RZParamatersImpactOnRecons/CMUsynthWORLD/slt/arctic_a0102_WORLDsynth.wav" type="audio/wav">Audio element not supported</audio></td>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 240px; height: 20px"><source src="./media/RZParamatersImpactOnRecons/CMURZsynthOnlyVUV/slt/arctic_a0102_synthOnlyVUVCohClassifier.wav" type="audio/wav">Audio element not supported</audio></td>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 240px; height: 20px"><source src="./media/RZParamatersImpactOnRecons/CMURZsynthVUVAP/slt/arctic_a0102_synthVUVRZAPCohClassifier.wav" type="audio/wav">Audio element not supported</audio></td>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 240px; height: 20px"><source src="./media/RZParamatersImpactOnRecons/CMURZsynthVUVExtendedAPF0CorrectedV2/slt/arctic_a0102_synthVUVRZAPF0CohClassifier.wav" type="audio/wav">Audio element not supported</audio></td>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 240px; height: 20px"><source src="./media/RZParamatersImpactOnRecons/CMURZsynthRZVUVAPAMWORLDF0/slt/arctic_a0102_synthRZVUVAPAMWORLDF0.wav" type="audio/wav">Audio element not supported</audio></td>
+</tr>
+
+<tr>
+    <th align="middle"> arctic_a0103.wav </th>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 240px; height: 20px"><source src="./media/RZParamatersImpactOnRecons/slt/arctic_a0103.wav" type="audio/wav">Audio element not supported</audio></td>
+    <!--<td align="middle"><table class="invisible">-->
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 240px; height: 20px"><source src="./media/RZParamatersImpactOnRecons/CMUsynthSTRAIGHT/slt/arctic_a0103_STRAIGHTsynth.wav" type="audio/wav">Audio element not supported</audio></td>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 240px; height: 20px"><source src="./media/RZParamatersImpactOnRecons/CMUsynthWORLD/slt/arctic_a0103_WORLDsynth.wav" type="audio/wav">Audio element not supported</audio></td>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 240px; height: 20px"><source src="./media/RZParamatersImpactOnRecons/CMURZsynthOnlyVUV/slt/arctic_a0103_synthOnlyVUVCohClassifier.wav" type="audio/wav">Audio element not supported</audio></td>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 240px; height: 20px"><source src="./media/RZParamatersImpactOnRecons/CMURZsynthVUVAP/slt/arctic_a0103_synthVUVRZAPCohClassifier.wav" type="audio/wav">Audio element not supported</audio></td>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 240px; height: 20px"><source src="./media/RZParamatersImpactOnRecons/CMURZsynthVUVExtendedAPF0CorrectedV2/slt/arctic_a0103_synthVUVRZAPF0CohClassifier.wav" type="audio/wav">Audio element not supported</audio></td>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 240px; height: 20px"><source src="./media/RZParamatersImpactOnRecons/CMURZsynthRZVUVAPAMWORLDF0/slt/arctic_a0103_synthRZVUVAPAMWORLDF0.wav" type="audio/wav">Audio element not supported</audio></td>
+</tr>
+<tr>
+    <th align="middle"> arctic_a0104.wav </th>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 240px; height: 20px"><source src="./media/RZParamatersImpactOnRecons/slt/arctic_a0104.wav" type="audio/wav">Audio element not supported</audio></td>
+    <!--<td align="middle"><table class="invisible">-->
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 240px; height: 20px"><source src="./media/RZParamatersImpactOnRecons/CMUsynthSTRAIGHT/slt/arctic_a0104_STRAIGHTsynth.wav" type="audio/wav">Audio element not supported</audio></td>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 240px; height: 20px"><source src="./media/RZParamatersImpactOnRecons/CMUsynthWORLD/slt/arctic_a0104_WORLDsynth.wav" type="audio/wav">Audio element not supported</audio></td>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 240px; height: 20px"><source src="./media/RZParamatersImpactOnRecons/CMURZsynthOnlyVUV/slt/arctic_a0104_synthOnlyVUVCohClassifier.wav" type="audio/wav">Audio element not supported</audio></td>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 240px; height: 20px"><source src="./media/RZParamatersImpactOnRecons/CMURZsynthVUVAP/slt/arctic_a0104_synthVUVRZAPCohClassifier.wav" type="audio/wav">Audio element not supported</audio></td>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 240px; height: 20px"><source src="./media/RZParamatersImpactOnRecons/CMURZsynthVUVExtendedAPF0CorrectedV2/slt/arctic_a0104_synthVUVRZAPF0CohClassifier.wav" type="audio/wav">Audio element not supported</audio></td>
+    <td>
+    <audio title="Sampling frequency: 1600Hz
+    Last modification.: June 20, 2019 13:00" controls style="width: 240px; height: 20px"><source src="./media/RZParamatersImpactOnRecons/CMURZsynthRZVUVAPAMWORLDF0/slt/arctic_a0104_synthRZVUVAPAMWORLDF0.wav" type="audio/wav">Audio element not supported</audio></td>
+</tr>
+</table>
+
+        </body>
+    </html>
+    
