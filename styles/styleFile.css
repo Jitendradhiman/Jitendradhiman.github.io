@@ -27,7 +27,8 @@ small.bold {
 }
 
 #header {
-        background:white url(./purvi_hello_spec.png) no-repeat bottom;
+        /*background:white url(./purvi_hello_spec.png) no-repeat bottom;*/
+        background:white url(./solid7.jpeg) no-repeat bottom;
 	background-size: 100% 100%;
         #background:#fff url(../images-static/foggy800x200.jpg) no-repeat bottom;
         height: 200px;
